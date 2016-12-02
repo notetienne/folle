@@ -16,17 +16,17 @@ public class Produit {
     public Produit() {
     }
 
-    public void test() {
-        this.Nom="Les galettes de bonne grand mère";
+    public void test(String lenom) {
+        this.Nom=lenom;
     }
     public void nomme() throws JSONException {
         String url = "http://fr.openfoodfacts.org/api/v0/produit/5410041424805";
         HttpHandler sh = new HttpHandler();
         String jsonStr = sh.makeServiceCall(url);
-        JSONArray arr = new JSONArray(jsonStr);
-        Log.e(TAG, "Response from url: " + jsonStr);
         if (jsonStr!=null) {
             try {
+                JSONArray arr = new JSONArray(jsonStr);
+                Log.e(TAG, "Response from url: " + jsonStr);
                 JSONObject jObj = arr.getJSONObject(0);
                 this.Nom = jObj.getString("product_name_fr");
                 this.Type = "rien";

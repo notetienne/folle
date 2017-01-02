@@ -1,6 +1,7 @@
 package com.example.etienne.folle_e;
 
 import android.net.Uri;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.graphics.Bitmap;
@@ -18,6 +19,15 @@ import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 import org.json.JSONException;
+import android.content.Intent;
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.TextView;
+import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.vision.barcode.Barcode;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = (Button) findViewById(R.id.button);
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+        StrictMode.setThreadPolicy(policy);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 ImageView myImageView = (ImageView) findViewById(R.id.imgview);
                 Bitmap myBitmap = BitmapFactory.decodeResource(
                         getApplicationContext().getResources(),
-                        R.drawable.test3);
+                        R.drawable.test5);
                 myImageView.setImageBitmap(myBitmap);
 
                 BarcodeDetector detector =
@@ -49,18 +62,18 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 Produit testis = new Produit();
-                try {
-                    testis.nomme();
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+
                 Frame frame = new Frame.Builder().setBitmap(myBitmap).build();
                 SparseArray<Barcode> barcodes = detector.detect(frame);
 
                 Barcode thisCode = barcodes.valueAt(0);
                 TextView txtView = (TextView) findViewById(R.id.txtContent);
                 String code = thisCode.rawValue;
-
+                try {
+                    testis.nomme(code);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 txtView.setText(testis.Nom);
             }
         });

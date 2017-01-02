@@ -21,13 +21,18 @@ public class HttpHandler {
     }
 
     public String makeServiceCall(String reqUrl) {
+
         String response = null;
         try {
             URL url = new URL(reqUrl);
+            System.out.println("url ok");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            System.out.println("connected");
             conn.setRequestMethod("GET");
+            System.out.println("get ok");
             // read the response
             InputStream in = new BufferedInputStream(conn.getInputStream());
+            System.out.println("in ok");
             response = convertStreamToString(in);
         } catch (MalformedURLException e) {
             Log.e(TAG, "MalformedURLException: " + e.getMessage());

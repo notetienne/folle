@@ -11,6 +11,7 @@ import static com.google.android.gms.wearable.DataMap.TAG;
 public class Produit {
     String Nom=null;
     String Type=null;
+    String Poids=null;
     int code=0;
 
     public Produit() {
@@ -33,8 +34,10 @@ public class Produit {
                 System.out.println("json objé");
                 JSONObject product = mainJson.getJSONObject("product");
                 String nomfr = product.getString("product_name_fr");
+                String poidsfr = product.getString("quantity");
                 System.out.println(nomfr);
                 this.Nom = nomfr;
+                this.Poids = poidsfr;
             } catch (JSONException e) {
                 e.printStackTrace();
             }

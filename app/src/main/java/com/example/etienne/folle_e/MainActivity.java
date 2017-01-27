@@ -28,20 +28,38 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnClickListener {
     private static String url = "http://api.androidhive.info/contacts/";
     private GoogleApiClient client;
+    private Button scanBtn;
+    private TextView formatTxt, contentTxt, poidsTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scanBtn = (Button)findViewById(R.id.scan_button);
+        formatTxt = (TextView)findViewById(R.id.scan_format);
+        contentTxt = (TextView)findViewById(R.id.scan_content);
+        poidsTxt = (TextView)findViewById(R.id.scan_poids);
+
         Button btn = (Button) findViewById(R.id.button);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
+        scanBtn.setOnClickListener(this);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,5 +126,40 @@ public class MainActivity extends AppCompatActivity {
 
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
+
+    }
+    public void onClick(View v){
+
+        if(v.getId()==R.id.scan_button){
+            IntentIntegrator scanIntegrator = new IntentIntegrator(this);
+            scanIntegrator.initiateScan();
+//scan
+        }
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+//retrieve scan result
+        IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        if (scanningResult != null) {
+            Produit ontest = new Produit();
+            String scanContent = scanningResult.getContents();
+            String scanFormat = scanningResult.getFormatName();
+            try {
+                ontest.nomme(scanContent);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            formatTxt.setText("Nom du produit : " + ontest.Nom);
+            poidsTxt.setText("Poids : " + ontest.Poids);
+            contentTxt.setText("Code Barre : " + scanContent);
+
+
+            //we have a result
+        }
+        else{
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "No scan data received!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
 }

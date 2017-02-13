@@ -1,5 +1,6 @@
 package com.example.etienne.folle_e;
 
+import android.graphics.Bitmap;
 import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,6 +13,7 @@ public class Produit {
     String Nom=null;
     String Type=null;
     String Poids=null;
+    Bitmap Photo=null;
     int code=0;
 
     public Produit() {

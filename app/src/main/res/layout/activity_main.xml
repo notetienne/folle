@@ -60,5 +60,11 @@
             android:textIsSelectable="true"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/scan_poids" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="#AAA"
+            />
     </LinearLayout>
 </RelativeLayout>

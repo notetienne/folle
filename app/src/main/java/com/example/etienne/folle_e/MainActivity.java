@@ -30,6 +30,8 @@ import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.squareup.picasso.Picasso;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        ImageView imageView;
         setContentView(R.layout.activity_main);
         scanBtn = (Button)findViewById(R.id.scan_button);
         formatTxt = (TextView)findViewById(R.id.scan_format);
@@ -144,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             Produit ontest = new Produit();
             String scanContent = scanningResult.getContents();
             String scanFormat = scanningResult.getFormatName();
+            ImageView imageView;
             try {
                 ontest.nomme(scanContent);
             } catch (JSONException e) {
@@ -152,7 +156,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             formatTxt.setText("Nom du produit : " + ontest.Nom);
             poidsTxt.setText("Poids : " + ontest.Poids);
             contentTxt.setText("Code Barre : " + scanContent);
-
+            imageView = (ImageView) findViewById(R.id.imageView);
+            Picasso.with(getBaseContext()).load(ontest.Photo).into(imageView);
 
             //we have a result
         }

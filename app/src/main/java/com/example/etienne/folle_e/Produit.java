@@ -13,7 +13,7 @@ public class Produit {
     String Nom=null;
     String Type=null;
     String Poids=null;
-    Bitmap Photo=null;
+    String Photo=null;
     int code=0;
 
     public Produit() {
@@ -37,9 +37,11 @@ public class Produit {
                 JSONObject product = mainJson.getJSONObject("product");
                 String nomfr = product.getString("product_name_fr");
                 String poidsfr = product.getString("quantity");
+                String urlphoto = product.getString("image_thumb_url");
                 System.out.println(nomfr);
                 this.Nom = nomfr;
                 this.Poids = poidsfr;
+                this.Photo = urlphoto;
             } catch (JSONException e) {
                 e.printStackTrace();
             }

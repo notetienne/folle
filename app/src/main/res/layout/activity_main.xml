@@ -60,6 +60,7 @@
             android:textIsSelectable="true"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/scan_poids" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -67,4 +68,12 @@
             android:src="#AAA"
             />
     </LinearLayout>
+
+    <Button
+        android:text="Connexion au caddie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bluetoothBtn" />
 </RelativeLayout>

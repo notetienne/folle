@@ -1,16 +1,20 @@
 package com.example.etienne.folle_e;
 
-import android.net.Uri;
-import android.os.StrictMode;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.StrictMode;
+import android.support.v7.app.AppCompatActivity;
 import android.util.SparseArray;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
@@ -18,33 +22,16 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
-import org.json.JSONException;
-import android.content.Intent;
-import android.os.Bundle;
-import android.app.Activity;
-import android.util.Log;
-import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.TextView;
-import com.google.android.gms.common.api.CommonStatusCodes;
-import com.google.android.gms.vision.barcode.Barcode;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.squareup.picasso.Picasso;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import org.json.JSONException;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
     private static String url = "http://api.androidhive.info/contacts/";
     private GoogleApiClient client;
-    private Button scanBtn;
+    private Button scanBtn, bluetoothBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
 
     @Override
@@ -57,12 +44,25 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         formatTxt = (TextView)findViewById(R.id.scan_format);
         contentTxt = (TextView)findViewById(R.id.scan_content);
         poidsTxt = (TextView)findViewById(R.id.scan_poids);
+        bluetoothBtn = (Button) findViewById(R.id.bluetoothBtn);
 
         Button btn = (Button) findViewById(R.id.button);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
         scanBtn.setOnClickListener(this);
+
+        bluetoothBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Le premier paramètre est le nom de l'activité actuelle
+                // Le second est le nom de l'activité de destination
+                Intent ActiviteBluetooth = new Intent(MainActivity.this, Bluetooth.class);
+
+                // On lance l'intent
+                startActivity(ActiviteBluetooth);
+            }
+        });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,7 +23,7 @@ public class Produit {
         this.Nom=lenom;
     }
     public void nomme(String barcode) throws JSONException {
-        String url = "http://fr.openfoodfacts.org/api/v0/produit/"+ barcode +".json";
+        String url = "http://195.154.170.113/folleweb/barcode.php?code="+ barcode;
         HttpHandler sh = new HttpHandler();
         System.out.println("handler ok");
         String jsonStr = sh.makeServiceCall(url);
@@ -31,13 +31,13 @@ public class Produit {
         if (jsonStr!=null) {
             try {
                 System.out.println("before array");
-                JSONObject mainJson = new JSONObject(jsonStr);
+                JSONArray mainJson = new JSONArray(jsonStr);
                 System.out.println(barcode);
                 System.out.println("json objé");
-                JSONObject product = mainJson.getJSONObject("product");
-                String nomfr = product.getString("product_name_fr");
-                String poidsfr = product.getString("quantity");
-                String urlphoto = product.getString("image_thumb_url");
+                JSONObject product = mainJson.getJSONObject(0);
+                String nomfr = product.getString("name");
+                String poidsfr = product.getString("poids");
+                String urlphoto = product.getString("photo");
                 System.out.println(nomfr);
                 this.Nom = nomfr;
                 this.Poids = poidsfr;

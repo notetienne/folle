@@ -198,6 +198,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 //retrieve scan result
+        
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
             Produit ontest = new Produit();

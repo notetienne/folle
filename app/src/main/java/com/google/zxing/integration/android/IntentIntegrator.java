@@ -255,6 +255,7 @@ public class IntentIntegrator {
      *   if a prompt was needed, or null otherwise.
      */
     public final AlertDialog initiateScan() {
+        System.out.println("troisiem");
         return initiateScan(ALL_CODE_TYPES, -1);
     }
 

@@ -28,7 +28,6 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONException;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
-    private static String url = "http://api.androidhive.info/contacts/";
     private GoogleApiClient client;
     private Button scanBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
@@ -49,23 +48,18 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        super.onCreate(savedInstanceState);
-        ImageView imageView;
         setContentView(R.layout.activity_main);
         scanBtn = (Button)findViewById(R.id.scan_button);
         formatTxt = (TextView)findViewById(R.id.scan_format);
         contentTxt = (TextView)findViewById(R.id.scan_content);
         poidsTxt = (TextView)findViewById(R.id.scan_poids);
+        scanBtn.setOnClickListener(this);
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-
         StrictMode.setThreadPolicy(policy);
-        scanBtn.setOnClickListener(this);
-
-
-
-
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -169,6 +163,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 .build();
     }
 
+
     //******************************************* Fin Bluetooth *******************************************
 
     @Override
@@ -186,19 +181,22 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
 
+
     }
     public void onClick(View v){
 
-        if(v.getId()==R.id.scan_button){
-            IntentIntegrator scanIntegrator = new IntentIntegrator(this);
-            scanIntegrator.initiateScan();
+        if(v.getId()==R.id.scan_button) {
+            //IntentIntegrator scanIntegrator = new IntentIntegrator(this);
+            new com.google.zxing.integration.android.IntentIntegrator(this).initiateScan();
+            System.out.println("deuxieme ok");
+            //scanIntegrator.initiateScan();
 //scan
         }
     }
-
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 //retrieve scan result
-        
+
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
             Produit ontest = new Produit();

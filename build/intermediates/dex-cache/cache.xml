@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_d124761f602ec619ed3b70601027f1c227e2b491/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,12 +57,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_8d548fcf4fc18acef9abdb74dcf03a86a0453fdd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_560d4271db48ad71395956b71f68ff6f2412cb96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_4b176783ec66fbbb4a03c8d491ab338f2d827068/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_1808add599685da703d4f263b447f6e718b85b10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_cc302b73cd6b7a0b312517a682404c192a918f43/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,12 +111,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_9353ee6eb7d2298b693e00c3269eec7d35463f89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_2216d05993cff55f5c7b91fd6e86c8c6e0df2a5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_63403fad20692e963db2691515cbc07466a98080/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,12 +147,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_bdca27191b4714ba9568bfc465725d5fa7ec7f9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="df1cb17511aabbb63264a0024949d1e42502a512">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_7b8e9614195515543d9974b0224d9b887fb907ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_52728e17fbbfac09ec0cce032bfa2e46b1e93cf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_26b3ef0accb3f51afcdd3c5ed562c832a5abee36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_936474d5436f033ea8489fe54406aa59f843a13b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_d3ff558e8918c0bb739b18b70d424e475e044a99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_345500bea92f9330f48fead179fee1f08ae4e4a9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,6 +264,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_75ca4b08af4ed7052aea6535ffc463d88ef8efd4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_2f2794250d37c6acce65b6a79db78cf66c036440/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -162,6 +297,24 @@
         revision="25.0.2"
         sha1="734e80dffea7bd76c18ae256822a124c30d85850">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_6ac84110131c117ed3a688bc057b0907ce88cf93/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_6577f0178bc5789175881bbb57da3451e0f816c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a850152305b001ddbab313fdf9a87b456996470b">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_191b67c6e7e4d2a2768588c959bb9b563b5acbf0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,12 +354,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.0_352731e5b4b691f1595478f7c44ab5bd921c5bd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1d193729baf37df3d902a423291423a0df7e3779">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_84771f2a4516be4524c3aed5eb470df448edc71c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.0.1_6d7891db422e813a68c37ef1b2fd9cb82171cc01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_ee06f2e28f05ca9a54d96ee3ba6e59f0a4c2a414/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,12 +399,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_de7ac97ff4be6714188fd1b582ee9423e6bb1cba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_7a71abc8747d4c3934392cd03ffcc29ea3b337c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.0.1_ffc813a6f6df32569012d7c6c7d9130cfffbb815/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,12 +453,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_fc219871b34a7bdc0b2742eaee8f7611bc9c5d1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_cbdaf3ac03af7d0aa09ad72fb917f82bb72cb02b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4d74b129931b4c152c389f06ca7c8ef57126a362">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a5173813fc5946569e37d30efb8342391ff3cddd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_ce990eba004bd88eb8aaf6d5b3761332a36181e3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -273,12 +498,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_33791e23e878bbd631cc1c9a2acb754af00e3baf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.0.1_2c0bd2c259cbe2298a93b49d30e6b46e3b2d1e06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_d3d36e559a45a5a75891076f73551813c4628901/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -306,249 +549,6 @@
         revision="25.0.2"
         sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
         <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_0ef79f6daea4098e1647c164e443094f38df024e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_d124761f602ec619ed3b70601027f1c227e2b491/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_8d548fcf4fc18acef9abdb74dcf03a86a0453fdd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_560d4271db48ad71395956b71f68ff6f2412cb96/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_4b176783ec66fbbb4a03c8d491ab338f2d827068/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_cc302b73cd6b7a0b312517a682404c192a918f43/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_9353ee6eb7d2298b693e00c3269eec7d35463f89/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_63403fad20692e963db2691515cbc07466a98080/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_bdca27191b4714ba9568bfc465725d5fa7ec7f9f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_52728e17fbbfac09ec0cce032bfa2e46b1e93cf3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_26b3ef0accb3f51afcdd3c5ed562c832a5abee36/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_936474d5436f033ea8489fe54406aa59f843a13b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_d3ff558e8918c0bb739b18b70d424e475e044a99/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_345500bea92f9330f48fead179fee1f08ae4e4a9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_75ca4b08af4ed7052aea6535ffc463d88ef8efd4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_2f2794250d37c6acce65b6a79db78cf66c036440/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_6577f0178bc5789175881bbb57da3451e0f816c0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="299c9ba061a50290dad570d49e735cab02830928">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_191b67c6e7e4d2a2768588c959bb9b563b5acbf0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.0_352731e5b4b691f1595478f7c44ab5bd921c5bd3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.0.1_6d7891db422e813a68c37ef1b2fd9cb82171cc01/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_ee06f2e28f05ca9a54d96ee3ba6e59f0a4c2a414/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_de7ac97ff4be6714188fd1b582ee9423e6bb1cba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.0.1_ffc813a6f6df32569012d7c6c7d9130cfffbb815/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_fc219871b34a7bdc0b2742eaee8f7611bc9c5d1c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="336eafca3ced123ac2c324498e7f8b206366698b">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a5173813fc5946569e37d30efb8342391ff3cddd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_ce990eba004bd88eb8aaf6d5b3761332a36181e3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_33791e23e878bbd631cc1c9a2acb754af00e3baf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_d3d36e559a45a5a75891076f73551813c4628901/classes.dex" />
     </item>
     <item
         is-multidex="true"

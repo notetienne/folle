@@ -22,8 +22,8 @@ public class Bluetooth extends Activity {
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    //private final String address = "30:14:10:09:16:49";//arduino
-    private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    private final String address = "30:14:10:09:16:49";//arduino
+    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;

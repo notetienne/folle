@@ -43,9 +43,9 @@ public class BluetoothThread extends Thread {
     private static final char DELIMITER = '\n';
 
     // UUID that specifies a protocol for generic bluetooth serial communication
-    //private static final UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");//arduino
+    private static final UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");//arduino
     //private static final UUID uuid = UUID.fromString("94f39d29-7d6d-437d-973b-fba39e49d4ee");//test code android - rasp pi
-    private static final UUID uuid = UUID.fromString("1e0ca4ea-299d-4335-93eb-27fcfe7fa848");
+    //private static final UUID uuid = UUID.fromString("1e0ca4ea-299d-4335-93eb-27fcfe7fa848");//Raspberry
 
 
     // MAC address of remote Bluetooth device

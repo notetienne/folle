@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    private final String address = "30:14:10:09:16:49";//arduino
-    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    //private final String address = "30:14:10:09:16:49";//arduino
+    private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;
@@ -214,10 +214,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             imageView = (ImageView) findViewById(R.id.imageView);
             Picasso.with(getBaseContext()).load(ontest.Photo).into(imageView);
             //On envoie un message au caddie
-            writeButtonPressed("1");
-
+            if (btt != null) {
+                writeButtonPressed(ontest.Poids);
+            }
             //we have a result
         }
+
         else{
             Toast toast = Toast.makeText(getApplicationContext(),
                     "No scan data received!", Toast.LENGTH_SHORT);

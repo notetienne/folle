@@ -23,6 +23,7 @@ package com.google.zxing.integration.android;
  */
 public final class IntentResult {
 
+
     private final String contents;
     private final String formatName;
     private final byte[] rawBytes;

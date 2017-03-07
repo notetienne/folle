@@ -5,56 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#afd8ff"
     tools:context="com.example.etienne.folle_e.MainActivity">
 
-    <LinearLayout
+    <fragment
+        android:name="com.example.etienne.folle_e.InfosFrag"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/info_frag"/>
+
+
+    <Button android:id="@+id/scan_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:text="Scan" />
 
-
-
-        <Button android:id="@+id/scan_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="Scan" />
-
-        <TextView
-            android:id="@+id/scan_format"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textIsSelectable="true"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/scan_button" />
-        <TextView
-            android:id="@+id/scan_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textIsSelectable="true"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/scan_format" />
-        <TextView
-            android:id="@+id/scan_poids"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textIsSelectable="true"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/scan_poids" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="239dp"
-            android:layout_height="190dp"
-            android:src="#AAA"
-            android:paddingTop="50dp"
-            />
-    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liste"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/info_frag">
+    </ListView>
 
 </RelativeLayout>

@@ -24,8 +24,8 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 try {
                     chariot.startAnimation(an);
-                    sleep(1500);
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    sleep(0);
+                    Intent intent = new Intent(getApplicationContext(),Accueil.class);
                     startActivity(intent);
                     finish();
                 } catch (InterruptedException e) {

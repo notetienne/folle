@@ -1,37 +1,22 @@
 package com.example.etienne.folle_e;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-import com.squareup.picasso.Picasso;
 
-import org.json.JSONException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener {
-    private GoogleApiClient client;
-    private Button scanBtn;
-    private TextView formatTxt, contentTxt, poidsTxt;
-
+public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener {
+    //****************** variables Bluetooth *******************
     // Tag for logging
     private static final String TAG = "BluetoothActivity";
 
@@ -45,48 +30,40 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     // Handler for writing messages to the Bluetooth connection
     Handler writeHandler;
 
+    //****************** variables liste *******************
+
+    ListView mListView;
+    List<String> liste = new ArrayList<String>();
+    InfosFrag mInfosFrag;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        setContentView(R.layout.activity_main);
-        scanBtn = (Button)findViewById(R.id.scan_button);
-        formatTxt = (TextView)findViewById(R.id.scan_format);
-        contentTxt = (TextView)findViewById(R.id.scan_content);
-        poidsTxt = (TextView)findViewById(R.id.scan_poids);
-        scanBtn.setOnClickListener(this);
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        System.out.println("ok");
+
+        mListView = (ListView) findViewById(R.id.liste);
+        liste.add("fromage");
+        liste.add("Oeufs");
+        liste.add("pates");
+        liste.add("jambon");
+        liste.add("poulet");
+
+        mInfosFrag = (InfosFrag) getSupportFragmentManager().findFragmentById(R.id.info_frag);
+        mInfosFrag.NbArticles(liste.size());
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, liste);
+        mListView.setAdapter(adapter);
+
+        connectButtonPressed();
     }
+
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //ajoute les entrées de menu_test à l'ActionBar
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
+    public void onFragmentInteraction(Uri uri) {
+        return;
     }
-
-    //gère le click sur une action de l'ActionBar
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.co:
-                if(btt != null) {
-                    disconnectButtonPressed();
-                }else connectButtonPressed();
-                return true;
-            case R.id.message:
-                writeButtonPressed("1");
-                return true;
-
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-    //******************************************* Bluetooth **********************************************
 
     public void connectButtonPressed() {
         Log.v(TAG, "Connect button pressed.");
@@ -108,14 +85,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
                 // Do something with the message
                 if (s.equals("CONNECTED")) {
-                    Toast.makeText(MainActivity.this, "Connecté",
-                            Toast.LENGTH_LONG).show();
+                    mInfosFrag.EtatCo("Connecté");
                 } else if (s.equals("DISCONNECTED")) {
-                    Toast.makeText(MainActivity.this, "Déconnecté",
-                            Toast.LENGTH_LONG).show();
+                    mInfosFrag.EtatCo("Déconnecté");
                 } else if (s.equals("CONNECTION FAILED")) {
-                    Toast.makeText(MainActivity.this, "Erreur de connexion !",
-                            Toast.LENGTH_LONG).show();
+                    mInfosFrag.EtatCo("Erreur de connexion !");
                     btt = null;
                 }
             }
@@ -127,8 +101,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         // Run the thread
         btt.start();
 
-        Toast.makeText(MainActivity.this, "Connexion...",
-                Toast.LENGTH_SHORT).show();
+        mInfosFrag.EtatCo("Connexion au caddie...");
     }
 
     /**
@@ -138,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         Log.v(TAG, "Disconnect button pressed.");
 
         if(btt != null) {
+            writeButtonPressed("quit");
             btt.interrupt();
             btt = null;
         }
@@ -163,67 +137,4 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 .build();
     }
 
-
-    //******************************************* Fin Bluetooth *******************************************
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
-
-
-    }
-    public void onClick(View v){
-
-        if(v.getId()==R.id.scan_button) {
-            //IntentIntegrator scanIntegrator = new IntentIntegrator(this);
-            new com.google.zxing.integration.android.IntentIntegrator(this).initiateScan();
-            System.out.println("deuxieme ok");
-            //scanIntegrator.initiateScan();
-//scan
-        }
-    }
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-//retrieve scan result
-
-        IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-        if (scanningResult != null) {
-            Produit ontest = new Produit();
-            String scanContent = scanningResult.getContents();
-            String scanFormat = scanningResult.getFormatName();
-            ImageView imageView;
-            try {
-                ontest.nomme(scanContent);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-            formatTxt.setText("Nom du produit : " + ontest.Nom);
-            poidsTxt.setText("Poids : " + ontest.Poids);
-            contentTxt.setText("Code Barre : " + scanContent);
-            imageView = (ImageView) findViewById(R.id.imageView);
-            Picasso.with(getBaseContext()).load(ontest.Photo).into(imageView);
-            //On envoie un message au caddie
-            if (btt != null) {
-                writeButtonPressed(ontest.Poids);
-            }
-            //we have a result
-        }
-
-        else{
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "No scan data received!", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-    }
 }

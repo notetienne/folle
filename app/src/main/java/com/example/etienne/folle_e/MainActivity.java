@@ -1,30 +1,38 @@
 package com.example.etienne.folle_e;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
+import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
     //****************** variables Bluetooth *******************
     // Tag for logging
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    //private final String address = "30:14:10:09:16:49";//arduino
-    private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    private final String address = "30:14:10:09:16:49";//arduino
+    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;
@@ -37,10 +45,12 @@ public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragm
     ListView mListView;
     List<String> liste = new ArrayList<String>();
     InfosFrag mInfosFrag;
+    ArrayAdapter<String> adapter;
 
     //****************** Scan ****************
-
-    Button scan;
+    private GoogleApiClient client;
+    private Button scanBtn;
+    private TextView formatTxt, contentTxt, poidsTxt;
 
 
     @Override
@@ -59,19 +69,26 @@ public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragm
         mInfosFrag = (InfosFrag) getSupportFragmentManager().findFragmentById(R.id.info_frag);
         mInfosFrag.NbArticles(liste.size());
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, liste);
+        adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, liste);
         mListView.setAdapter(adapter);
 
         connectButtonPressed();
 
-        scan = (Button) findViewById(R.id.scan_button);
+        scanBtn = (Button) findViewById(R.id.scan_button);
+        scanBtn.setOnClickListener(this);
 
-        scan.setOnClickListener(new View.OnClickListener() {
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
+        /*scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.out.println("scan ici");
             }
-        });
+        });*/
 
     }
 
@@ -141,16 +158,54 @@ public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragm
         writeHandler.sendMessage(msg);
     }
 
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Main Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
+//******************************* Scan
+
+    public void onClick(View v){
+
+        if(v.getId()==R.id.scan_button) {
+            //IntentIntegrator scanIntegrator = new IntentIntegrator(this);
+            new com.google.zxing.integration.android.IntentIntegrator(this).initiateScan();
+            System.out.println("deuxieme ok");
+            //scanIntegrator.initiateScan();
+//scan
+        }
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+//retrieve scan result
+
+        IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        if (scanningResult != null) {
+            Produit ontest = new Produit();
+            String scanContent = scanningResult.getContents();
+            String scanFormat = scanningResult.getFormatName();
+            //ImageView imageView;
+            try {
+                ontest.nomme(scanContent);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            //formatTxt.setText("Nom du produit : " + ontest.Nom);
+            //poidsTxt.setText("Poids : " + ontest.Poids);
+            //contentTxt.setText("Code Barre : " + scanContent);
+            //imageView = (ImageView) findViewById(R.id.imageView);
+            //Picasso.with(getBaseContext()).load(ontest.Photo).into(imageView);
+            //On envoie un message au caddie
+            liste.add(ontest.Nom);
+            mListView.setAdapter(adapter);
+            if (btt != null) {
+                writeButtonPressed(ontest.Poids);
+            }
+            //we have a result
+        }
+
+        else{
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "No scan data received!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+
 
 }

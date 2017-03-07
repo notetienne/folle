@@ -178,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="048f5a0140fe36cc96710790703d6f9ff1a4f6ed">
+        sha1="9610520c7c2e4b64fc21f5d72bceb193848fd87f">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
     </item>
     <item
@@ -574,7 +574,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="30ac6f01f0305d7410701cbb26ac97132fdd5ee3">
+        sha1="9da60aecd4aa53320943b4c85c52baf89f21cac4">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_424a551f12c6e9736993c929338e45fc12784ee4/classes.dex" />
     </item>
     <item

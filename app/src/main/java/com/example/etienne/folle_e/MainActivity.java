@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button scanBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
 
+    private Button caisse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         scanBtn = (Button) findViewById(R.id.scan_button);
         scanBtn.setOnClickListener(this);
+
+        caisse = (Button) findViewById(R.id.caisse);
+        caisse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),Caisse.class);
+                startActivity(intent);
+            }
+        });
 
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
 
@@ -206,6 +216,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             toast.show();
         }
     }
-
-
 }

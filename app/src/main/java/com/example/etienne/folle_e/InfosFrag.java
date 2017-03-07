@@ -81,6 +81,7 @@ public class InfosFrag extends Fragment {
         etatCo.setText(msg);
     }
 
+
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {

@@ -12,6 +12,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_85fbe151d0c677583d2486de0c62519b941f7c04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_2f93a5374218a4cac4f33aa6587f787ea02c26c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_c7fa1aed0f0175bae69ce060f4c9314bb04b059d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_9f43f648b46e8dc0a39af17c18281bc24023bc8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -66,6 +102,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_9a11af897597af3141033986ad30375e538dc25c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_49cc8d6d3af4d248c1c34f31f41caa208bd7e0ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_678863894fdefc6209568de8b73530f2692f6657/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_11abb2305ea34ae154fee3044062deaef5084f59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -81,6 +153,42 @@
         revision="25.0.2"
         sha1="44a694d4095be84c2888764b1f7256b385c030ad">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_f0e06adaebdf8f752adf25c8d24ab3a495d5c0bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_8ae513f8cfeca66ac62ac7ea1cc0f5a6957e930c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_d75c2d5e713b931f8592a37f1796c73a3b5195bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_93770206d26d172165957f7a605ee90e4c75d263/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_9b96e2301bfb498b4b1ecf985310d1412449c309/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,6 +219,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.0.1_eb91e82b6d23906d1649d38fc317fdb10427f5f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -138,12 +255,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.journeyapps-zxing-android-embedded-3.0.2_ccbe60e292ec3f24fd1a46a498f3b3801ead74da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_cb57a630ee24c698d9e35d9fd8985348d988aca1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="df1cb17511aabbb63264a0024949d1e42502a512">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_29c3b1731680b9b30364c2c557e605beb8437420/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_9d4be5b20bc45f9793a6199bb7043b31a4b08900/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.0.1_7011e19ed79e9ce4a7c45792b8d9ad1b621fdc12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_f996a05c9815724393da13da0451049e9b64a7b6/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,6 +327,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_663c2b4c17492731739560e06cabd7b18946e10b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -174,11 +345,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_6dbbd6d56b75f3e16aec5f7a1f4e45b7e3018293/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9610520c7c2e4b64fc21f5d72bceb193848fd87f">
+        sha1="9365f80efb08bbb3bf33158aec033a167b78000e">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
     </item>
     <item
@@ -207,6 +387,24 @@
         revision="25.0.2"
         sha1="734e80dffea7bd76c18ae256822a124c30d85850">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_a6a058612cdeea01ea0c5ebd8de43ff2c7e3e760/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.0.1_bd099f95ce2765e8ada6eed7059c8a39c5af6518/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_780fef455998b5320ebf1cd80a2ec7d8ddf611a5/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,285 +453,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_27ca8c10a39537915c5b6bc4387fe002c7fc9e16/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_5f815da9d4ff4946823ae5a00d98e6642e4c27a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_10748c12ca4cfd9513546ebd96b9af6d7ccf7c67/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.0.1_c4df779b026715538bf01e5b3752027c1d6110a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.0.1_0401704cb2ca856b7fbc2453fbee0e6bd5ac5c07/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_e7cd58cbdd74071e351839cd055ee524b48b1802/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_b1a2d76290ab01c51b2a6f8f481ae98c1dbafe34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_a36a2c96acaf2fab9824a569959b4cd058fb3780/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_9759eddd97ee9299ee7c4b701eabab57d3648448/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_85fbe151d0c677583d2486de0c62519b941f7c04/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_2f93a5374218a4cac4f33aa6587f787ea02c26c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_c7fa1aed0f0175bae69ce060f4c9314bb04b059d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_9f43f648b46e8dc0a39af17c18281bc24023bc8f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_9a11af897597af3141033986ad30375e538dc25c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_49cc8d6d3af4d248c1c34f31f41caa208bd7e0ae/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_678863894fdefc6209568de8b73530f2692f6657/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_11abb2305ea34ae154fee3044062deaef5084f59/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_8ae513f8cfeca66ac62ac7ea1cc0f5a6957e930c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_d75c2d5e713b931f8592a37f1796c73a3b5195bb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_93770206d26d172165957f7a605ee90e4c75d263/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_9b96e2301bfb498b4b1ecf985310d1412449c309/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.0.1_eb91e82b6d23906d1649d38fc317fdb10427f5f1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.journeyapps-zxing-android-embedded-3.0.2_ccbe60e292ec3f24fd1a46a498f3b3801ead74da/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_cb57a630ee24c698d9e35d9fd8985348d988aca1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_9d4be5b20bc45f9793a6199bb7043b31a4b08900/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.0.1_7011e19ed79e9ce4a7c45792b8d9ad1b621fdc12/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_f996a05c9815724393da13da0451049e9b64a7b6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_663c2b4c17492731739560e06cabd7b18946e10b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_6dbbd6d56b75f3e16aec5f7a1f4e45b7e3018293/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.0.1_bd099f95ce2765e8ada6eed7059c8a39c5af6518/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_780fef455998b5320ebf1cd80a2ec7d8ddf611a5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -561,6 +480,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_27ca8c10a39537915c5b6bc4387fe002c7fc9e16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_5f815da9d4ff4946823ae5a00d98e6642e4c27a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -579,6 +516,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_10748c12ca4cfd9513546ebd96b9af6d7ccf7c67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -588,12 +534,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.0.1_c4df779b026715538bf01e5b3752027c1d6110a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_ba35f861bbb3c3d17b5726ada3168ffcd103906d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.0.1_0401704cb2ca856b7fbc2453fbee0e6bd5ac5c07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_e7cd58cbdd74071e351839cd055ee524b48b1802/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -615,12 +588,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_b1a2d76290ab01c51b2a6f8f481ae98c1dbafe34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_a36a2c96acaf2fab9824a569959b4cd058fb3780/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_079c7e6bd74568fcfe72a7a3a28ecd1d859987d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_9759eddd97ee9299ee7c4b701eabab57d3648448/classes.dex" />
     </item>
 
 </items>

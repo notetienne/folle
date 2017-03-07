@@ -30,4 +30,11 @@
         android:layout_below="@+id/info_frag">
     </ListView>
 
+    <Button
+        android:text="Caisse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caisse" />
+
+
 </RelativeLayout>

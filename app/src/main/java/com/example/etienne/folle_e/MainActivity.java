@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.analytics.ecommerce.Product;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -22,6 +23,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONException;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,7 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button scanBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
 
+
     private Button caisse;
+
+    public ArrayList<Produit> listeprod = new ArrayList<Produit>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,41 +179,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
 
         if(v.getId()==R.id.scan_button) {
-            //IntentIntegrator scanIntegrator = new IntentIntegrator(this);
-            new com.google.zxing.integration.android.IntentIntegrator(this).initiateScan();
-            System.out.println("deuxieme ok");
-            //scanIntegrator.initiateScan();
-//scan
+            IntentIntegrator scanIntegrator = new IntentIntegrator(MainActivity.this);
+            scanIntegrator.initiateScan();
         }
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-//retrieve scan result
-
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
-            Produit ontest = new Produit();
+            int i = listeprod.size();
+            Produit produitencours = new Produit();
+            listeprod.add(produitencours);
             String scanContent = scanningResult.getContents();
-            String scanFormat = scanningResult.getFormatName();
-            //ImageView imageView;
             try {
-                ontest.nomme(scanContent);
+                listeprod.get(i).nomme(scanContent);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            //formatTxt.setText("Nom du produit : " + ontest.Nom);
-            //poidsTxt.setText("Poids : " + ontest.Poids);
-            //contentTxt.setText("Code Barre : " + scanContent);
-            //imageView = (ImageView) findViewById(R.id.imageView);
-            //Picasso.with(getBaseContext()).load(ontest.Photo).into(imageView);
-            //On envoie un message au caddie
-            liste.add(ontest.Nom);
+            liste.add(listeprod.get(i).Nom);
             mListView.setAdapter(adapter);
             if (btt != null) {
-                writeButtonPressed(ontest.Poids);
+                writeButtonPressed(listeprod.get(i).Poids);
             }
-            //we have a result
         }
 
         else{

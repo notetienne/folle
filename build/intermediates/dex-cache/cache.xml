@@ -3,624 +3,615 @@
 
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.0.1_0209730fa6acacb73d0ce95c793872eba65554cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_85fbe151d0c677583d2486de0c62519b941f7c04/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_2f93a5374218a4cac4f33aa6587f787ea02c26c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_c7fa1aed0f0175bae69ce060f4c9314bb04b059d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_9f43f648b46e8dc0a39af17c18281bc24023bc8f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.0.1_f609e4d973ca12f6c02079250042893618c364d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_343ce893d1e84aa9523ac7a925096cceb9ba33b2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.0_be58794f51e9b2e6932b63c241bdcc176ee75e0a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_b747b848e98f40c1c4f9df3e4947768075a4bad5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_8ac746c65a76b1dac0ed2c3c81ee8ef44f455dfe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/6e4cd934aafd27550bb1f1d94cd9a6dd725ac21f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.0.1_b7c880b4d5b659cdf2e2cb8fbe01c05ec46f9a0b/classes.dex" />
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9ca120ce0b1e00d23ae6381a19313a8dc13a8ddd/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_9a11af897597af3141033986ad30375e538dc25c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_49cc8d6d3af4d248c1c34f31f41caa208bd7e0ae/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_678863894fdefc6209568de8b73530f2692f6657/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a48dc0b148059764d32500be558702d5ff932058">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_11abb2305ea34ae154fee3044062deaef5084f59/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.0.1_a3ddb3edb53e8c537f0865d9719c2fd9eef18a73/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_f0e06adaebdf8f752adf25c8d24ab3a495d5c0bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_8ae513f8cfeca66ac62ac7ea1cc0f5a6957e930c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_d75c2d5e713b931f8592a37f1796c73a3b5195bb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_93770206d26d172165957f7a605ee90e4c75d263/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_9b96e2301bfb498b4b1ecf985310d1412449c309/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1d193729baf37df3d902a423291423a0df7e3779">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_76fe62e5ea6bf8696c2e0c1ea9f1da664df688bc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_23f60a2c598737c48702d122056dde965e6becfa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.0.1_0b67398b0194bc20e98381cd1ebd56091b1d1b34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.0.1_eb91e82b6d23906d1649d38fc317fdb10427f5f1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.0.1_bd153fe679148874f7572b24deebb72f5eb14626/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.0.1_6b78c8c26e814131d492634cd737a939a8d9bf75/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_8b9d7e33d2ef4cd658ff7cbd2b3238ee40da1410/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.journeyapps-zxing-android-embedded-3.0.2_ccbe60e292ec3f24fd1a46a498f3b3801ead74da/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_cb57a630ee24c698d9e35d9fd8985348d988aca1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_29c3b1731680b9b30364c2c557e605beb8437420/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_9d4be5b20bc45f9793a6199bb7043b31a4b08900/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.0.1_7011e19ed79e9ce4a7c45792b8d9ad1b621fdc12/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_f996a05c9815724393da13da0451049e9b64a7b6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_07ec83443fd77fc36993677a5b1ba65fcf9ee042/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.0.1_603e6f7dc0b676f52838cf435ce7352209575b7c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_663c2b4c17492731739560e06cabd7b18946e10b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.0.1_a7edc096ebb00cb1b48b0b477800cc00d4028396/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_6dbbd6d56b75f3e16aec5f7a1f4e45b7e3018293/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9365f80efb08bbb3bf33158aec033a167b78000e">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.1_8bbd20c452347365d391fcf7ebcee0a220dd57a8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_aea99eec1cabece8c1e611a489ada744102aba2b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_a6a058612cdeea01ea0c5ebd8de43ff2c7e3e760/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.0.1_bd099f95ce2765e8ada6eed7059c8a39c5af6518/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_780fef455998b5320ebf1cd80a2ec7d8ddf611a5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_b6bd8befd3acd2a611f52790047dcb489a171cb5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.0.1_c7057c46fe4a1b3c2b5b7a6e8c623535ca6ec77a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_ca6fdba97435f6ad5859eca98b49ae748dda1b9c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.0.1_33f158d0bf6317ad99a07fb100bbc66f80d36b6c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_fee6b88e4f26e8612ed20e86ebeb9e7881958df8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.0.1_d27cc8b70573d3819f9219fb4e65c2c7c25e695a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/6699f38c0458bb07add3e9eb8793a7157bea5a16/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_dec10d73026eecda4abf5230961f47b1c4f3f129/classes.dex" />
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1a9279ba1d9e8cf77bf1bb0299218a84731e8dff/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/63e6b3d67896b970ea7bed3cf04fc934f8fa301b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_6efb07aed52524c75b7fb61616a3b3ee231ac7e3/classes.dex" />
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05be32164b00e271589056ec5738082979e49245/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jar="/Users/Etienne/.android/build-cache/a19244525703e444cbb6985f4be8170f92160604/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_27ca8c10a39537915c5b6bc4387fe002c7fc9e16/classes.dex" />
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4d0c1042eaad39fdafc10184baa2a8704e4d9c28/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_5f815da9d4ff4946823ae5a00d98e6642e4c27a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_c3f84fb7be6552129a06eb2df623611d7452370b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9da60aecd4aa53320943b4c85c52baf89f21cac4">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_424a551f12c6e9736993c929338e45fc12784ee4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_10748c12ca4cfd9513546ebd96b9af6d7ccf7c67/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_07c9cb1b864003ffd3d830b4f1b3f35ea4152e6f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.0.1_c4df779b026715538bf01e5b3752027c1d6110a0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/5108464871d1c2cdc990dbcc9fac5c95a7625f77/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_ba35f861bbb3c3d17b5726ada3168ffcd103906d/classes.dex" />
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a4f296767b85966a63b09e26f0182093e09d309/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/37d47ce6ad09d4d093d48955ee8b7497102d5e9b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.0.1_0401704cb2ca856b7fbc2453fbee0e6bd5ac5c07/classes.dex" />
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eb0641630fa55f8f83785d1c6d40f4f4f31b8580/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/80a5636555ea60fcaec82d7dd8cb672cf0927f55/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_e7cd58cbdd74071e351839cd055ee524b48b1802/classes.dex" />
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e455e8128e8e544a1cd4c9765f877fc1fa1d345b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.0.1_70c0d0bcca0901d004c82d8b2934544623febb3f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.0.1_76ef1f36afa0364d9f2a78ce0a4b3a7d7602ea06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_b1a2d76290ab01c51b2a6f8f481ae98c1dbafe34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_a36a2c96acaf2fab9824a569959b4cd058fb3780/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_079c7e6bd74568fcfe72a7a3a28ecd1d859987d2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jar="/Users/Etienne/.android/build-cache/f429849051cd640ed57ef99c45e2f78168a53649/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_9759eddd97ee9299ee7c4b701eabab57d3648448/classes.dex" />
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd6d0294095cd7c2db878d7cd49fc3fe5f232aa7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/39a35a52e822a7f34e2e5961b5597784b4980da5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5567a884783c971460d631c88fcdf13f2ef5852d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/3dda80e6a6ddc7e76a539568bafd61488bbd6c4b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c49c97c7b8d40568bca1a7cbfbc2d154e63ca021/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/9564c4426c160974b3e0948cf50139a1614b2c02/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ce9f2f74fb541726033aa4f29138eaf457c37377/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/231f0fe9f91b65870bc5499aaa5e81fc004c0ba3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a6ed9397be967718ad07bf8e655ea39b7354a622/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/e834c1a3412523255f248248ca72a8b5a3b61e92/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4c3525baa2847e52c700c21b5c92deaa3e224b9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/2e0de628ab097e835de6c97a3243092f0894b6d0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5ce7c8b6b9f43ca9d8aeb989418e8883d157648/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/05a6fc2eca5d4fd16356d23f56e2f83a98f2fc29/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_668efba802160f7f6fdedbf4214629461c0e4971/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/02412c3aedfe4ab87f33ca8b8272c7f0e4ecd8ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42c684e1f984a93c6b8b3751b0454114d16f3ee3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/9e3ceef3f74de79ab9a4b397e76248fe02534c67/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f914ae9525a0b906e647547c3bfbff64c5b5296/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/d66591e1702f8ec4b81a2799e6f6b5e29cd200ef/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_021ff62209c9d77f080e5bceca4ef6f0b843bca2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/6ab5c5e1c4ac5d05951f235341e4192d1424f701/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_26a9f90b14597705fb0fba96250ea68fd36efb5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/792b8fb19666240d5ddd2eae81a95181300975dc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_540793d2526672e4028354c8d39e39913f298924/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/4d69d54f89c3fca2fe7113cd51989474e6807921/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b50388c57025cb826fecefc659caa577e7ab6a1b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/909b3f9a8691b32eef31392ef0872e29030be241/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be9eb8577e85d2166de2a5bb1ee4de32458d1877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/05a6fc2eca5d4fd16356d23f56e2f83a98f2fc29/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_548cc7499d49e548fcb68ae90ab3e01dda9b498d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/490bc10a4b27814a08d801f2ace0270aac976f75/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab997d271a920ff1db6883006529d7f4b751e008/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/7b6a4f6db6ac924eaf290bc9ee22da8a8444a99e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6198281a25865dbf206a58492acfe2c461330c84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/fb2dd9b134b61c0bb5cfa01dd81f6e55fcc07fbf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_25df517e20ebe2c0cb66a80d829b9773389e156d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/173225a9bf5e9d5f1d9d395124ff445ff3639ca3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_833e7e788ea79c186b42f74d074fb93a19073889/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/bbe2924ef2df63455b1b5221c34dd6a8420f9148/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_efcc08aaed365183bcaba86ce987bd42f1c695ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/343fe6e97a8aa4b22a61e0243afb2860f5ea4e5d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c7fc5ad5f9c1fee473fff9c2385fb197d8fe6877/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/355037d335560d2cad8a5439153f55327b41cd37/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d6a573e13c92d750ccf2a89082428abf04fb170/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/e60446add77cb95c7fc0001377ad134245574d74/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aaedb4a4313bf5e95bd51e942a5893b3a669d590/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/0b6dbab1812672b670d2b287c63c6b154f342ba5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_40ef2b913ee7412aecd0518dc8ef593162c1379c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/8d2f287c9fdbd0c0890af47d3b5be93a13712c70/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f470312382ee5ddda8f46ac78a0deb28b806cd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/23cccaba604d2262681f0e6e03c6a485770b01ab/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3cc507ba5ffe1d1661402bf43f111f9086c34223/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/e2619bf3d4dd6d63fbf341f0c0f90f190bee3b58/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_187ddc85c507a22ec8f00367176b3685a234b282/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/9bd2dcaae3e340da6cf3f1a7498a1b42b3b90df5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e3f4301bfef0dcd1288c8f50eb818e9d8c407a0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/e6422e999e8511f2262260e2c20b8b602bb4fd5d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_121375461902935bf7e410c32ba018ceb4ce6628/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/92b7d0b9b64ecab3f7bad4b871c38f6a456303c8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_25182c2573f1e2fbe6076ffbad3bdc5e24844917/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_191b67c6e7e4d2a2768588c959bb9b563b5acbf0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_cb1a58f1e683a77e9d31961db68fa749d17dc34c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/41a6c6bc7faeec3c951ee68edc74cd6f8313f392/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7c300266e71d77859c46b11d77e6664337aac3fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/834073114f3632a3881051ce4fd3c00e755abb65/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1911e1349b9a522a8e440d7670ba5611a73732b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.0/e019d15a13a9786f881141d2df6654b8510bce8b/core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.0_352731e5b4b691f1595478f7c44ab5bd921c5bd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/69894a4b4e66930dd8fc725c02a6e2460364ac0f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e67940400c0d4907faeff298347206306fd451a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/00db6d9895d04ec8ae9e81e3ab671b151afa4338/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_620a98fd5945d3b10b723c2a5413abb554a5f520/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/324e34b6f0851cad779729b45451003a8405e249/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b267a532d0abc719100a48ceb68c9c2e058279af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/dad510356a814092c600846cbda91c594dfcc27c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_850d27b2bbb15e433e48c06823ea0d3f2d749af9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/6a89a023f873d402e3d7bea104d39e5523118ecd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1d831f7d01c06e12e3a3f1cf42be04d7ef22519d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/b1dab9aa89ce03fc03d3515352e762d37a7a14e4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9be23771533f83e7fee43292c5c24c5aa404c7e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/3927bd75333124d144a23791e9c61d2e60ccd964/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6542b66c6991e5b220137e36be550bbda22f7578/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/d4416b6ec44e18e9d9e0c671e9e74190ffe9a7ef/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f6a0fecd4c937bca52fe36ea72c0ebd6506444e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/f8dae58f1794567420d3725371c7f0c9f534c232/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_33b0552efb639aec453ac824e0cd0db2d243e3ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1148548d995a89a8026416a0a9e09e32f4edf92f">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a5173813fc5946569e37d30efb8342391ff3cddd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_ce990eba004bd88eb8aaf6d5b3761332a36181e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/5b54e32fe368f16dbce01c5fa0084bdac95c7ed1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_efdab8faa9702b891827cf0e168d48cd8894901a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/cad5d5976130860208980d5eb9f8e16294a31e8d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69d404d083cd3e8d8339a31fa91f45a36045660d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/408c1c26a6cca54b74b58cadacfb88cf8ab6aa8c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_df1e7cde24930337d4662e019de29d0f14a6da06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/6941c20a69e0cc06a4cd53aa32eefe4db24c1ce9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_396df49ee284437290b69acbb0424542b23ee9ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/61dd596babc79cd77bffef4ee66c1403d504f3ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15ff993717a4197873882b334a2a3268ce33b225/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/d5d7b399be2fcdeaa33795bce7cd1fd393a7b325/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff83dc8fd6844da60efa3eecdf08e5317af63348/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/20fc5d3221e0f38314e80b0855bb713525e70d12/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6753f4f21840f77a7cca71b99109916a9b59dced/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/329ffef1189d2d359d3d49590c0bcc5852cb52c0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1f065d20d165cc88b2f36f72d51fb69068a41488/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/65897f63d2a41e036195650a6782e66ee4c0bc8e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b464d1db618f66ce3d7414c60082069ff88ab777/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/ba9a23f3f2e47f4a1c494276b6bf72991bfc7d2b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5f6ea40bf6763f159f6c9558328acbd7b19f9b22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/2910007a2b203d221e56ed62851546f5c99c1e6c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4842affb68f551e36753bf0f046a320088cec037/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/96d8b54e002296f710d7eb083b3606a2dae7f602/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6150067246364569bc7e784c9ad00bffef9cb4d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/776609d5106e39471c380de7f57575655f0043d9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_373ec8314870fb8e721e9c591848a92d5231073f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Etienne/.android/build-cache/604e9817d93b9d8f509e579d2962b8425c2215e6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b4064984ec19db5eee6ad394405cb3ea77508ecb/classes.dex" />
     </item>
 
 </items>

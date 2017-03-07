@@ -6,7 +6,9 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.google.android.gms.appindexing.Action;
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragm
     List<String> liste = new ArrayList<String>();
     InfosFrag mInfosFrag;
 
+    //****************** Scan ****************
+
+    Button scan;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,16 @@ public class MainActivity extends AppCompatActivity implements InfosFrag.OnFragm
         mListView.setAdapter(adapter);
 
         connectButtonPressed();
+
+        scan = (Button) findViewById(R.id.scan_button);
+
+        scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("scan ici");
+            }
+        });
+
     }
 
 

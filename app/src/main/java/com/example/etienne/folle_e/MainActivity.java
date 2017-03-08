@@ -46,13 +46,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     InfosFrag mInfosFrag;
     ArticleAdapter adapter;
     public List<Produit> listeprod;
+    TextView DisplayPrix;
 
     //****************** variables Scan ****************
     private GoogleApiClient client;
     private Button scanBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
-
-
     private Button caisse;
 
 
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //mListView = liste du XML. listeprod = liste des produits mise à jour à chaque scan. On affiche donc "listeprod" via mListView
         adapter = new ArticleAdapter(MainActivity.this, listeprod);
         mListView.setAdapter(adapter);
+        DisplayPrix = (TextView)findViewById(R.id.display_prix);
         //Lancer le Bluetooth
         connectButtonPressed();
 
@@ -195,8 +195,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 listeprod.add(produitencours);
                 //Affichage de la liste
                 mListView.setAdapter(adapter);
-                //mise à jour affichage du nombre d'articles
+                //mise à jour affichage du nombre d'articles et total
+                System.out.println("maj nb produits");
                 mInfosFrag.NbArticles(listeprod.size());
+                CalculSomme();
             }else{
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Produit introuvable", Toast.LENGTH_SHORT);
@@ -213,5 +215,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     "No scan data received!", Toast.LENGTH_SHORT);
             toast.show();
         }
+    }
+
+   public void CalculSomme(){
+       int i = 0;
+       int sum = 0;
+       System.out.println("début calcul somme");
+       for (i = 0; i< listeprod.size(); i++){
+          // sum += Integer.parseInt(listeprod.get(i).Prix);
+           System.out.println(listeprod.get(i).Prix);
+       }
+       //DisplayPrix.setText("Total : " + sum + "€");
     }
 }

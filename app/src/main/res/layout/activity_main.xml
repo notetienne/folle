@@ -36,5 +36,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/caisse" />
 
+    <TextView
+        android:id="@+id/display_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/liste"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/scan_button"
+        android:text="Total : 0 €" />
+
 
 </RelativeLayout>

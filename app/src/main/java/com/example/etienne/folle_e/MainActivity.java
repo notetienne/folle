@@ -219,12 +219,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
    public void CalculSomme(){
        int i = 0;
-       int sum = 0;
+       float sum = 0;
        System.out.println("début calcul somme");
        for (i = 0; i< listeprod.size(); i++){
-          // sum += Integer.parseInt(listeprod.get(i).Prix);
+           sum += listeprod.get(i).Prix;
            System.out.println(listeprod.get(i).Prix);
        }
-       //DisplayPrix.setText("Total : " + sum + "€");
+       DisplayPrix.setText("Total : " + sum + "€");
     }
 }

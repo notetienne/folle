@@ -14,7 +14,7 @@ public class Produit {
     String Type=null;
     String Poids=null;
     String Photo=null;
-    String Prix = null;
+    Float Prix = null;
     int  color;
     int code=0;
 
@@ -46,7 +46,7 @@ public class Produit {
                 this.Nom = nomfr;
                 this.Poids = poidsfr;
                 this.Photo = urlphoto;
-                this.Prix = product.getString("prix");
+                this.Prix = Float.parseFloat(product.getString("prix"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -82,15 +82,12 @@ public class Produit {
 
     public String getPrix(){
         if(this.Prix != null){
-            return this.Prix + " €";
+            String msg = this.Prix + " €";
+            return msg;
         }else return "null";
     }
 
     public Drawable getImage(){
-       //return Color.GRAY;
-        //return Picasso.with(getBaseContext()).load(this.Photo);
-        //return this.Photo;
-
         try {
             URL urle = new URL(this.Photo);
             Object content = urle.getContent();

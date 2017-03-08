@@ -24,7 +24,7 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener, ArticleAdapter.ProduitAdapterListener {
 
     //****************** variables Bluetooth *******************
     // Tag for logging
@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("ok");
-
         //Scan
         listeprod = new ArrayList<Produit>();
         mListView = (ListView) findViewById(R.id.liste);
@@ -71,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mInfosFrag.NbArticles(listeprod.size());
         //mListView = liste du XML. listeprod = liste des produits mise à jour à chaque scan. On affiche donc "listeprod" via mListView
         adapter = new ArticleAdapter(MainActivity.this, listeprod);
+        adapter.addListeners(this);
         mListView.setAdapter(adapter);
         DisplayPrix = (TextView)findViewById(R.id.display_prix);
         //Lancer le Bluetooth
@@ -226,5 +226,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            System.out.println(listeprod.get(i).Prix);
        }
        DisplayPrix.setText("Total : " + sum + "€");
+    }
+
+    public void onClickNom(Produit item, int position) {
+        Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
+        intent.putExtra("Nom", listeprod.get(position).Nom);
+        intent.putExtra("Poids", listeprod.get(position).Poids);
+        intent.putExtra("Prix", Float.toString(listeprod.get(position).Prix));
+        intent.putExtra("URLImage", listeprod.get(position).Photo);
+        startActivity(intent);
     }
 }

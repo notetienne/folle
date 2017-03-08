@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:background="#AAA" />
+
+    <TextView
+        android:id="@+id/nom_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        tools:text="Nom article" />
+
+    <TextView
+        android:id="@+id/prix_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/nom_article"
+        android:layout_below="@+id/nom_article"
+        android:textSize="20dp"
+        tools:text="Prix" />
+
+    <TextView
+        android:id="@+id/poids_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/prix_article"
+        android:layout_below="@+id/prix_article"
+        android:text="Poids" />
+
+
+</RelativeLayout>

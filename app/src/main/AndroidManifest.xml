@@ -62,7 +62,8 @@
         <activity
             android:name=".Accueil"
             android:screenOrientation="portrait" />
-        <activity android:name=".Caisse"></activity>
+        <activity android:name=".Caisse" />
+        <activity android:name=".InfosProduits"></activity>
     </application>
 
 </manifest>

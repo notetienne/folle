@@ -227,7 +227,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
        DisplayPrix.setText("Total : " + sum + "€");
     }
-
     public void onClickNom(Produit item, int position) {
         Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
         intent.putExtra("Nom", listeprod.get(position).Nom);

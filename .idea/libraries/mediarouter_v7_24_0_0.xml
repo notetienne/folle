@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="mediarouter-v7-24.0.0">
     <ANNOTATIONS>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c5730332dc1c329be38b4407e99313ed5c542f83/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/05a6fc2eca5d4fd16356d23f56e2f83a98f2fc29/output/jars/libs/internal_impl-24.0.0.jar!/" />
-      <root url="jar://$USER_HOME$/.android/build-cache/05a6fc2eca5d4fd16356d23f56e2f83a98f2fc29/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/05a6fc2eca5d4fd16356d23f56e2f83a98f2fc29/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6e927f76daaa36f6efc98bbf25bd219a9cbec262/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6e927f76daaa36f6efc98bbf25bd219a9cbec262/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6e927f76daaa36f6efc98bbf25bd219a9cbec262/output/jars/libs/internal_impl-24.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

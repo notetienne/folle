@@ -1,23 +1,27 @@
 package com.example.etienne.folle_e;
 
-import android.graphics.Bitmap;
-import android.util.Log;
+import android.graphics.drawable.Drawable;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-import static com.google.android.gms.wearable.DataMap.TAG;
+import java.io.InputStream;
+import java.net.URL;
 
 public class Produit {
     String Nom=null;
     String Type=null;
     String Poids=null;
     String Photo=null;
+    String Prix = null;
+    int  color;
     int code=0;
 
     public Produit() {
     }
+
+
 
     public void test(String lenom) {
         this.Nom=lenom;
@@ -42,6 +46,7 @@ public class Produit {
                 this.Nom = nomfr;
                 this.Poids = poidsfr;
                 this.Photo = urlphoto;
+                this.Prix = product.getString("prix");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -58,7 +63,44 @@ public class Produit {
             } **/
         }
         else {
-            this.Nom="erreur dans le json ej sais pas quoi";
+            this.Nom="erreur dans le json je sais pas quoi";
+        }
+
+    }
+
+    public String getNom(){
+        if(this.Nom !=null){
+            return this.Nom;
+        }else return "null";
+    }
+
+    public String getPoids(){
+        if(this.Poids != null){
+            return this.Poids + "g";
+        }else return "null";
+    }
+
+    public String getPrix(){
+        if(this.Prix != null){
+            return this.Prix + " €";
+        }else return "null";
+    }
+
+    public Drawable getImage(){
+       //return Color.GRAY;
+        //return Picasso.with(getBaseContext()).load(this.Photo);
+        //return this.Photo;
+
+        try {
+            URL urle = new URL(this.Photo);
+            Object content = urle.getContent();
+
+            InputStream inputstream = (InputStream)content;
+            Drawable drawable = Drawable.createFromStream(inputstream, "src");
+            return drawable;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
 
     }

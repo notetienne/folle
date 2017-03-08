@@ -9,13 +9,11 @@ import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.ecommerce.Product;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -23,11 +21,11 @@ import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONException;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
+
     //****************** variables Bluetooth *******************
     // Tag for logging
     private static final String TAG = "BluetoothActivity";
@@ -45,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //****************** variables liste *******************
 
     ListView mListView;
-    List<String> liste = new ArrayList<String>();
     InfosFrag mInfosFrag;
-    ArrayAdapter<String> adapter;
+    ArticleAdapter adapter;
+    public List<Produit> listeprod;
 
-    //****************** Scan ****************
+    //****************** variables Scan ****************
     private GoogleApiClient client;
     private Button scanBtn;
     private TextView formatTxt, contentTxt, poidsTxt;
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button caisse;
 
-    public ArrayList<Produit> listeprod = new ArrayList<Produit>();
+
 
 
     @Override
@@ -66,24 +64,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         System.out.println("ok");
 
+        //Scan
+        listeprod = new ArrayList<Produit>();
         mListView = (ListView) findViewById(R.id.liste);
-        liste.add("fromage");
-        liste.add("Oeufs");
-        liste.add("pates");
-        liste.add("jambon");
-        liste.add("poulet");
-
+        //On met à jour l'affichage du nombre d'article
         mInfosFrag = (InfosFrag) getSupportFragmentManager().findFragmentById(R.id.info_frag);
-        mInfosFrag.NbArticles(liste.size());
-
-        adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, liste);
+        mInfosFrag.NbArticles(listeprod.size());
+        //mListView = liste du XML. listeprod = liste des produits mise à jour à chaque scan. On affiche donc "listeprod" via mListView
+        adapter = new ArticleAdapter(MainActivity.this, listeprod);
         mListView.setAdapter(adapter);
-
+        //Lancer le Bluetooth
         connectButtonPressed();
 
+        //Créé un listener pour le bouton scan
         scanBtn = (Button) findViewById(R.id.scan_button);
         scanBtn.setOnClickListener(this);
 
+        //bouton pour le payement
         caisse = (Button) findViewById(R.id.caisse);
         caisse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,27 +90,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        //Utile pour le scan
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-
-
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        /*scanBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println("scan ici");
-            }
-        });*/
-
     }
 
-
+    //Implémerter cette méthode pour récupérer des infos du fragment
     @Override
     public void onFragmentInteraction(Uri uri) {
         return;
     }
 
+    //******************************* Bluetooth *******************************
+
+    //Lancer la connexion Bluetooth
     public void connectButtonPressed() {
         Log.v(TAG, "Connect button pressed.");
 
@@ -153,9 +145,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mInfosFrag.EtatCo("Connexion au caddie...");
     }
 
-    /**
-     * Kill the Bluetooth thread.
-     */
+
+    //Déconnecte le Bluetooth -> Kill the Bluetooth thread.
     public void disconnectButtonPressed() {
         Log.v(TAG, "Disconnect button pressed.");
 
@@ -165,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btt = null;
         }
     }
-
+    //Envoyer un message via Bluetooth
     public void writeButtonPressed(String m) {
         Log.v(TAG, "Write button pressed.");
 
@@ -174,8 +165,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         writeHandler.sendMessage(msg);
     }
 
-//******************************* Scan
+//******************************* Scan *******************************
 
+    //Au click du bouton scan
     public void onClick(View v){
 
         if(v.getId()==R.id.scan_button) {
@@ -184,21 +176,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //Gestion du scan + récupération des infos sur le produit scanné
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
             int i = listeprod.size();
             Produit produitencours = new Produit();
-            listeprod.add(produitencours);
             String scanContent = scanningResult.getContents();
             try {
-                listeprod.get(i).nomme(scanContent);
+                produitencours.nomme(scanContent);
             } catch (JSONException e) {
+                System.out.println("erreur de CB");
                 e.printStackTrace();
             }
-            liste.add(listeprod.get(i).Nom);
-            mListView.setAdapter(adapter);
+            //Si le produit existe dans la bdd, l'ajouter, sinon afficher un message d'erreur
+            if(produitencours.Nom != null){
+                listeprod.add(produitencours);
+                //Affichage de la liste
+                mListView.setAdapter(adapter);
+                //mise à jour affichage du nombre d'articles
+                mInfosFrag.NbArticles(listeprod.size());
+            }else{
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Produit introuvable", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+            //Si on est connecté au caddie, lui envoyer le poids
             if (btt != null) {
                 writeButtonPressed(listeprod.get(i).Poids);
             }

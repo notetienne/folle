@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class Caisse extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.etienne.folle_e.MESSAGE";
+    public static final String EXTRA_MAIL = "com.example.etienne.folle_e.MAIL";
+    public static final String EXTRA_PASS = "com.example.etienne.folle_e.PASS";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +20,8 @@ public class Caisse extends AppCompatActivity {
         EditText passclient = (EditText) findViewById(R.id.passwordclient);
         String mailclientstring = mailclient.getText().toString();
         String passclientstring = passclient.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, mailclientstring);
-        intent.putExtra(EXTRA_MESSAGE, passclientstring);
+        intent.putExtra(EXTRA_MAIL, mailclientstring);
+        intent.putExtra(EXTRA_PASS, passclientstring);
         startActivity(intent);
     }
 }

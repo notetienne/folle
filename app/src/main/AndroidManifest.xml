@@ -63,6 +63,13 @@
             android:name=".Accueil"
             android:screenOrientation="portrait" />
         <activity android:name=".Caisse" />
+        <activity android:name=".CaisseConnect"
+            android:parentActivityName=".Caisse" >
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Caisse" />
+        </activity>
         <activity android:name=".InfosProduits"></activity>
     </application>
 

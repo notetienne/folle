@@ -9,6 +9,7 @@ import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -227,12 +228,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
        DisplayPrix.setText("Total : " + sum + "€");
     }
+
     public void onClickNom(Produit item, int position) {
-        Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
+        Intent intent = new Intent(getApplicationContext(), InfosProduits.class);
         intent.putExtra("Nom", listeprod.get(position).Nom);
         intent.putExtra("Poids", listeprod.get(position).Poids);
         intent.putExtra("Prix", Float.toString(listeprod.get(position).Prix));
         intent.putExtra("URLImage", listeprod.get(position).Photo);
         startActivity(intent);
     }
+
 }

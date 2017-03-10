@@ -43,30 +43,7 @@ public class ArticleAdapter extends ArrayAdapter<Produit> {
         //il ne reste plus qu'à remplir notre vue
         viewHolder.nom.setText(article.getNom());
         viewHolder.prix.setText(article.getPrix());
-<<<<<<< HEAD
         viewHolder.image.setImageDrawable(article.getImage());
-=======
-        viewHolder.image.setImageDrawable(article.getImage());//(new ColorDrawable(article.getImage()));
-
-        //------------ Début de l'ajout -------
-//On mémorise la position de l'image dans le composant textview
-        viewHolder.image.setTag(position);
-//On ajoute un listener
-        viewHolder.image.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //Lorsque l'on clique sur le nom, on récupère la position de la "Personne"
-                Integer position = (Integer)v.getTag();
-
-                //On prévient les listeners qu'il y a eu un clic sur le TextView "TV_Nom".
-                sendListener(mListP.get(position), position);
-
-            }
-
-        });
-//------------ Fin de l'ajout -------
->>>>>>> master
 
         return convertView;
     }

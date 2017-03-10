@@ -63,10 +63,8 @@
             android:name=".Accueil"
             android:screenOrientation="portrait" />
         <activity android:name=".Caisse" />
-<<<<<<< HEAD
         <activity android:name=".InfosProduits"
             android:screenOrientation="portrait"></activity>
-=======
         <activity android:name=".CaisseConnect"
             android:parentActivityName=".Caisse" >
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -74,8 +72,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Caisse" />
         </activity>
-        <activity android:name=".InfosProduits"></activity>
->>>>>>> master
     </application>
 
 </manifest>

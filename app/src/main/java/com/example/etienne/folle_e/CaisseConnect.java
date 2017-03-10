@@ -21,14 +21,15 @@ public class CaisseConnect extends AppCompatActivity {
         String url = "http://195.154.170.113/folleweb/connexion.php?mail="+ mailclientstring +"&password=" + passclientstring;
         HttpHandler sh = new HttpHandler();
         String jsonStr = sh.makeServiceCall(url);
-        if (jsonStr!=null) {
+        System.out.println(jsonStr);
+        if (!jsonStr.contains("null")) {
             try {
                 JSONArray mainJson = new JSONArray(jsonStr);
                 JSONObject client = mainJson.getJSONObject(0);
                 String mail = client.getString("mail");
                 String credit = client.getString("credit");
                 TextView textView = (TextView) findViewById(R.id.textView3);
-                textView.setText("Votre credit restant : " + credit + "€");
+                textView.setText(credit);
             } catch (JSONException e) {
                 e.printStackTrace();
             }

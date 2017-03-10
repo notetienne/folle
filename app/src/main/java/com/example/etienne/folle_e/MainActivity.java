@@ -254,9 +254,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
        DisplayPrix.setText("Total : " + sum + "€");
     }
+<<<<<<< HEAD
     public void onClickNom(int position) {
         Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+=======
+
+    public void onClickNom(Produit item, int position) {
+        Intent intent = new Intent(getApplicationContext(), InfosProduits.class);
+>>>>>>> master
         intent.putExtra("Nom", listeprod.get(position).Nom);
         intent.putExtra("Poids", listeprod.get(position).Poids);
         intent.putExtra("Prix", Float.toString(listeprod.get(position).Prix));
@@ -265,4 +271,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
         overridePendingTransition(R.anim.transition_d, R.anim.transition_g);
     }
+
 }

@@ -11,12 +11,45 @@
     tools:context="com.example.etienne.folle_e.Caisse">
 
     <TextView
-        android:text="Paypal"
-        android:textSize="40dp"
+        android:text="Connexion compte client"
+        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
         android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/mailclient"
+        android:text="blanc.etienne@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/passwordclient"
+        android:text="etienne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/connexionclientbut"
+        android:onClick="ConnexionClient"
+        android:text="Connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
 </RelativeLayout>

@@ -17,4 +17,12 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="TextView" />
+
+    <TextView
+        android:id="@+id/paiementstatus"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="TextView" />
 </LinearLayout>

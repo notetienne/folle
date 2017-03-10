@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public List<Produit> listeprod;
     TextView DisplayPrix;
     TextView DisplayNb;
+    Float sum = null;
 
     //****************** variables Scan ****************
     private GoogleApiClient client;
@@ -102,6 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),Caisse.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                intent.putExtra("Total", Float.toString(sum));
                 startActivity(intent);
             }
         });
@@ -246,7 +249,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
    public void CalculSomme(){
        int i = 0;
-       float sum = 0;
+       sum = null;
        System.out.println("début calcul somme");
        for (i = 0; i< listeprod.size(); i++){
            sum += listeprod.get(i).Prix;
@@ -254,7 +257,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
        DisplayPrix.setText("Total : " + sum + "€");
     }
-    
+
     public void onClickNom(int position) {
         Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,7 +13,7 @@ public class CaisseConnect extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caisseconnect);
-        // Get the Intent that started this activity and extract the string
+
         Intent intent = getIntent();
         String mailclientstring = intent.getStringExtra(Caisse.EXTRA_MAIL);
         String passclientstring = intent.getStringExtra(Caisse.EXTRA_PASS);
@@ -29,28 +28,16 @@ public class CaisseConnect extends AppCompatActivity {
                 String mail = client.getString("mail");
                 String credit = client.getString("credit");
                 TextView textView = (TextView) findViewById(R.id.textView3);
-                textView.setText("Votre credit restant : " + credit);
+                textView.setText("Votre credit restant : " + credit + "€");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            /** try {
-             JSONArray arr = new JSONArray(jsonStr);
-             Log.e(TAG, "Response from url: " + jsonStr);
-             JSONObject jObj = arr.getJSONObject(0);
-             this.Nom = jObj.getString("product_name_fr");
-             System.out.println(this.Nom);
-             this.Type = "rien";
-             this.code = 0;
-             } catch (JSONException e) {
-             e.printStackTrace();
-             } **/
         }
+
         else {
             TextView textView = (TextView) findViewById(R.id.textView3);
             textView.setText("Pas de compte à ce mail");
         }
-
-
 
     }
 }

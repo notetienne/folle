@@ -22,21 +22,23 @@
 
     <EditText
         android:id="@+id/mailclient"
-        android:text="Adresse mail"
+        android:text="blanc.etienne@gmail.com"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/passwordclient"
-        android:text="Password"
+        android:text="etienne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/connexionclientbut"

@@ -6,28 +6,11 @@
     tools:context="com.example.etienne.folle_e.InfosFrag">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="x articles"
-        android:textColor="#FFFFFF"
-        android:textSize="26dp"
-        android:id="@+id/nb_articles" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:text="Erreur de connexion !"
-            android:textSize="19dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#f2a408"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/etat_co" />
 
     </LinearLayout>
 

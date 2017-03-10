@@ -9,6 +9,7 @@ import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -24,29 +25,30 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener, ArticleAdapter.ProduitAdapterListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
 
     //****************** variables Bluetooth *******************
     // Tag for logging
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    private final String address = "30:14:10:09:16:49";//arduino
-    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    //private final String address = "30:14:10:09:16:49";//arduino
+    private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;
 
     // Handler for writing messages to the Bluetooth connection
     Handler writeHandler;
+    TextView EtatCo;
 
     //****************** variables liste *******************
 
     ListView mListView;
-    InfosFrag mInfosFrag;
     ArticleAdapter adapter;
     public List<Produit> listeprod;
     TextView DisplayPrix;
+    TextView DisplayNb;
 
     //****************** variables Scan ****************
     private GoogleApiClient client;
@@ -65,14 +67,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Scan
         listeprod = new ArrayList<Produit>();
         mListView = (ListView) findViewById(R.id.liste);
-        //On met à jour l'affichage du nombre d'article
-        mInfosFrag = (InfosFrag) getSupportFragmentManager().findFragmentById(R.id.info_frag);
-        mInfosFrag.NbArticles(listeprod.size());
+        EtatCo = (TextView) findViewById(R.id.etat_co);
+
         //mListView = liste du XML. listeprod = liste des produits mise à jour à chaque scan. On affiche donc "listeprod" via mListView
         adapter = new ArticleAdapter(MainActivity.this, listeprod);
-        adapter.addListeners(this);
         mListView.setAdapter(adapter);
         DisplayPrix = (TextView)findViewById(R.id.display_prix);
+        DisplayNb = (TextView)findViewById(R.id.display_nb);
+        //On met à jour l'affichage du nombre d'article
+        DisplayNb.setText(listeprod.size() + " articles");
+        //Listener pour clique sur article
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView,
+                                    View view,
+                                    int position,
+                                    long id) {
+                onClickNom(position);
+            }
+        });
+
+
+
         //Lancer le Bluetooth
         connectButtonPressed();
 
@@ -95,6 +111,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        if (btt != null) {
+            writeButtonPressed("quit");
+        }
+        super.onDestroy();
     }
 
     //Implémerter cette méthode pour récupérer des infos du fragment
@@ -126,11 +151,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // Do something with the message
                 if (s.equals("CONNECTED")) {
-                    mInfosFrag.EtatCo("Connecté");
+                    EtatCo.setText("Connecté");
                 } else if (s.equals("DISCONNECTED")) {
-                    mInfosFrag.EtatCo("Déconnecté");
+                    EtatCo.setText("Déconnecté");
                 } else if (s.equals("CONNECTION FAILED")) {
-                    mInfosFrag.EtatCo("Erreur de connexion !");
+                    EtatCo.setText("Erreur de connexion !");
+
                     btt = null;
                 }
             }
@@ -142,7 +168,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Run the thread
         btt.start();
 
-        mInfosFrag.EtatCo("Connexion au caddie...");
+
+        EtatCo.setText("Connexion au caddie...");
     }
 
 
@@ -197,7 +224,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mListView.setAdapter(adapter);
                 //mise à jour affichage du nombre d'articles et total
                 System.out.println("maj nb produits");
-                mInfosFrag.NbArticles(listeprod.size());
+                DisplayNb.setText(listeprod.size() + " articles");
                 CalculSomme();
             }else{
                 Toast toast = Toast.makeText(getApplicationContext(),
@@ -227,12 +254,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        }
        DisplayPrix.setText("Total : " + sum + "€");
     }
-    public void onClickNom(Produit item, int position) {
+    public void onClickNom(int position) {
         Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         intent.putExtra("Nom", listeprod.get(position).Nom);
         intent.putExtra("Poids", listeprod.get(position).Poids);
         intent.putExtra("Prix", Float.toString(listeprod.get(position).Prix));
         intent.putExtra("URLImage", listeprod.get(position).Photo);
+        intent.putExtra("art", listeprod.get(0));
         startActivity(intent);
+        overridePendingTransition(R.anim.transition_d, R.anim.transition_g);
     }
 }

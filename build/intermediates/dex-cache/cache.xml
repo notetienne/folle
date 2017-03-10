@@ -403,7 +403,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fc4f317331447a3d6a0b090268bf62cb20ae90ea">
+        sha1="d7eae832f3e56e8c1dc62fa5e0a88abcd2bffb4a">
         <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
     </item>
     <item

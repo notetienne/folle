@@ -2,15 +2,19 @@ package com.example.etienne.folle_e;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.URL;
 
-public class InfosProduits extends AppCompatActivity {
+public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener,Serializable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +24,10 @@ public class InfosProduits extends AppCompatActivity {
         TextView DisplayNom = (TextView) findViewById(R.id.nom_article);
         TextView DisplayPoids = (TextView) findViewById(R.id.poids_article);
         TextView DisplayPrix = (TextView) findViewById(R.id.prix_article);
-
+        Button Delete = (Button) findViewById(R.id.delete);
         Intent i = getIntent();
+        Produit pro = (Produit)i.getSerializableExtra("art");
+
         String nom = i.getStringExtra("Nom");
         String prix = i.getStringExtra("Prix");
         String poids = i.getStringExtra("Poids");
@@ -33,6 +39,15 @@ public class InfosProduits extends AppCompatActivity {
         DisplayPrix.setText(prix + " €");
         DisplayPoids.setText(poids + "g");
 
+
+        Delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                //startActivity(intent);
+                finish();
+            }
+        });
 
 
     }
@@ -52,5 +67,10 @@ public class InfosProduits extends AppCompatActivity {
 
     }
 
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+        return;
+    }
 
 }

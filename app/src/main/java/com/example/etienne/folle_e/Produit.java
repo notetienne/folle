@@ -7,9 +7,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.URL;
-
-public class Produit {
+@SuppressWarnings("serial")
+public class Produit implements Serializable {
     String Nom=null;
     String Type=null;
     String Poids=null;

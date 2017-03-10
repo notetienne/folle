@@ -2,14 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
+    android:layout_height="match_parent">
+
+    <fragment
+        android:name="com.example.etienne.folle_e.InfosFrag"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/info_frag"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/avatar"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        tools:background="#AAA" />
+        tools:background="#AAA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
 
     <TextView
         android:id="@+id/nom_article"
@@ -41,6 +51,15 @@
         android:layout_alignLeft="@+id/prix_article"
         android:layout_below="@+id/prix_article"
         android:text="Poids" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/poubelle"
+        android:text="" />
 
 
 </RelativeLayout>

@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * A simple {@link android.app.Fragment} subclass.
@@ -27,8 +26,6 @@ public class InfosFrag extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private TextView nbArticles;
-    private TextView etatCo;
 
     private OnFragmentInteractionListener mListener;
 
@@ -68,18 +65,12 @@ public class InfosFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_infos, container, false);
-        nbArticles = (TextView) view.findViewById(R.id.nb_articles);
-        etatCo = (TextView) view.findViewById(R.id.etat_co);
         return view;
     }
 
-    public void NbArticles(int nb){
-        nbArticles.setText(nb + " articles");
-    }
 
-    public void EtatCo(String msg){
-        etatCo.setText(msg);
-    }
+
+
 
 
     // TODO: Rename method, update argument and hook method into UI event

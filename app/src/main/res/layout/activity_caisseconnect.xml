@@ -23,6 +23,15 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:gravity="center"
-        android:text="TextView" />
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/Payer"
+        android:layout_width="154dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/payement"
+        android:gravity="center" />
+
 </LinearLayout>

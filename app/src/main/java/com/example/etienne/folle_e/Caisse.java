@@ -10,13 +10,15 @@ import android.widget.EditText;
 public class Caisse extends AppCompatActivity {
     public static final String EXTRA_MAIL = "com.example.etienne.folle_e.MAIL";
     public static final String EXTRA_PASS = "com.example.etienne.folle_e.PASS";
-    Intent intent = getIntent();
-    String Total = intent.getStringExtra("Total");
+    String Total;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = getIntent();
+        Total = intent.getStringExtra("Total");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caisse);
     }
+
     public void ConnexionClient (View view) {
 
         Intent intent = new Intent(this, CaisseConnect.class);

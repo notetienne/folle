@@ -29,7 +29,7 @@ public class CaisseConnect extends AppCompatActivity {
                 String mail = client.getString("mail");
                 String credit = client.getString("credit");
                 TextView textView = (TextView) findViewById(R.id.textView3);
-                textView.setText(credit);
+                textView.setText("Votre solde restant s'élève à : " + credit + "€");
             } catch (JSONException e) {
                 e.printStackTrace();
             }

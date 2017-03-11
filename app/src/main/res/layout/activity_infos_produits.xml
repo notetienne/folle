@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/info_frag"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="58dp" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />
 
 
 </RelativeLayout>

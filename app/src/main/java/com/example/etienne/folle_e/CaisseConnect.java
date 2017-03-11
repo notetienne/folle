@@ -67,10 +67,13 @@ public class CaisseConnect extends AppCompatActivity {
     }
     public void payer (String mailclientstring, String passclientstring, float addition, float actuelfloat){
         String url = "http://195.154.170.113/folleweb/paiement.php?mail="+ mailclientstring +"&password=" + passclientstring +"&total=" + addition+ "+&actuel=" + actuelfloat;
+        float newsolde = actuelfloat - addition;
         System.out.println("lien ok");
         HttpHandler sh = new HttpHandler();
         String reussite = sh.makeServiceCall(url);
         TextView textView = (TextView) findViewById(R.id.paiementstatus);
+        TextView textViewtop = (TextView) findViewById(R.id.textView3);
         textView.setText(reussite);
+        textViewtop.setText("Votre solde restant s'élève à : " + newsolde + "€");
     }
 }

@@ -49,23 +49,29 @@ public class Produit implements Serializable {
                 this.Poids = poidsfr;
                 this.Photo = urlphoto;
                 this.Prix = Float.parseFloat(product.getString("prix"));
+                String url2 = "http://fr.openfoodfacts.org/api/v0/produit/"+ barcode +".json";
+                HttpHandler sh2 = new HttpHandler();
+                String jsonStr2 = sh2.makeServiceCall(url2);
+                if (jsonStr2!=null) {
+                    try {
+                        JSONObject mainJson2 = new JSONObject(jsonStr2);
+                        JSONObject product2 = mainJson2.getJSONObject("product");
+                        this.Compo = product2.getString("ingredients_text_with_allergens_fr");
+                        System.out.println(this.Compo);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                else
+                {
+                    this.Compo="inconnu";
+                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            String url2 = "http://fr.openfoodfacts.org/api/v0/produit/"+ barcode +".json";
-            HttpHandler sh2 = new HttpHandler();
-            String jsonStr2 = sh2.makeServiceCall(url2);
-             try {
-                 JSONObject mainJson = new JSONObject(jsonStr2);
-                 JSONObject product = mainJson.getJSONObject("product");
-                this.Compo = product.getString("ingredients_text_with_allergens_fr");
-                 System.out.println(this.Compo);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+
         }
         else {
-            System.out.println("erreur openfoodfacts");;
         }
 
     }

@@ -58,7 +58,7 @@ public class Produit implements Serializable {
              try {
                  JSONObject mainJson = new JSONObject(jsonStr2);
                  JSONObject product = mainJson.getJSONObject("product");
-                this.Compo = product.getString("ingredients_text_debug");
+                this.Compo = product.getString("ingredients_text_with_allergens_fr");
                  System.out.println(this.Compo);
             } catch (JSONException e) {
                 e.printStackTrace();

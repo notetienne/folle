@@ -7,6 +7,8 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -40,12 +42,13 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
         final String poids = MainActivity.listeprod.get(position).Poids;
         String URLImage = MainActivity.listeprod.get(position).Photo;
         String compo = MainActivity.listeprod.get(position).Compo;
+        Spanned compoformat = Html.fromHtml(compo);
 
         avatar.setImageDrawable(getImage(URLImage));
         DisplayNom.setText(nom);
         DisplayPrix.setText(prix + " €");
         DisplayPoids.setText(poids + "g");
-        DisplayCompo.setText("Composition : "+ compo);
+        DisplayCompo.setText("Composition : "+ compoformat);
 
 
         Delete.setOnClickListener(new View.OnClickListener() {

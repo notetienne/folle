@@ -25,8 +25,6 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.security.AccessController.getContext;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
 
     //****************** variables Bluetooth *******************
@@ -41,14 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     BluetoothThread btt;
 
     // Handler for writing messages to the Bluetooth connection
-    Handler writeHandler;
+    public Handler writeHandler;
     TextView EtatCo;
 
     //****************** variables liste *******************
 
     ListView mListView;
     ArticleAdapter adapter;
-    public List<Produit> listeprod;
+    public static List<Produit> listeprod;
     TextView DisplayPrix;
     TextView DisplayNb;
     float sum = 0;
@@ -104,6 +102,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         caisse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                writeButtonPressed("end");
                 Intent intent = new Intent(getApplicationContext(),Caisse.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 intent.putExtra("Total", String.valueOf(sum));
@@ -118,6 +117,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mListView.setAdapter(adapter);
+        DisplayNb.setText(listeprod.size() + " articles");
+        CalculSomme();
+    }
 
     @Override
     protected void onDestroy() {
@@ -197,7 +203,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         writeHandler.sendMessage(msg);
     }
 
-//******************************* Scan *******************************
+    //******************************* Scan *******************************
 
     //Au click du bouton scan
     public void onClick(View v){
@@ -228,7 +234,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Affichage de la liste
                 mListView.setAdapter(adapter);
                 //mise à jour affichage du nombre d'articles et total
-                System.out.println("maj nb produits");
                 DisplayNb.setText(listeprod.size() + " articles");
                 CalculSomme();
             }else{
@@ -263,14 +268,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClickNom(int position) {
         Intent intent = new Intent(getApplicationContext(),InfosProduits.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-
-        intent.putExtra("Nom", listeprod.get(position).Nom);
-        intent.putExtra("Poids", listeprod.get(position).Poids);
-        intent.putExtra("Prix", Float.toString(listeprod.get(position).Prix));
-        intent.putExtra("URLImage", listeprod.get(position).Photo);
-        intent.putExtra("art", listeprod.get(0));
+        intent.putExtra("pos", position);
         startActivity(intent);
         overridePendingTransition(R.anim.transition_d, R.anim.transition_g);
     }
+
 
 }

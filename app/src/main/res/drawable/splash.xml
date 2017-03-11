@@ -8,7 +8,7 @@
 
 <item>
     <bitmap
-        android:src="@drawable/folle"
+        android:src="@drawable/folle_blanche"
         android:gravity="center" />
 </item>
 

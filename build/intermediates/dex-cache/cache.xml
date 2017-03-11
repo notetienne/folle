@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="20debf58621cbc0dbed46e9fdd69a30d9eaf908b">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a5173813fc5946569e37d30efb8342391ff3cddd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_191b67c6e7e4d2a2768588c959bb9b563b5acbf0/classes.dex" />
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_424a551f12c6e9736993c929338e45fc12784ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74bfe146948ae003559c725dd7ee5f09b61b3b82">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
     </item>
 
 </items>

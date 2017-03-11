@@ -16,6 +16,7 @@ public class Produit implements Serializable {
     String Poids=null;
     String Photo=null;
     Float Prix = null;
+    String Compo=null;
     int  color;
     int code=0;
 
@@ -51,20 +52,20 @@ public class Produit implements Serializable {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            /** try {
-                JSONArray arr = new JSONArray(jsonStr);
-                Log.e(TAG, "Response from url: " + jsonStr);
-                JSONObject jObj = arr.getJSONObject(0);
-                this.Nom = jObj.getString("product_name_fr");
-                System.out.println(this.Nom);
-                this.Type = "rien";
-                this.code = 0;
+            String url2 = "http://fr.openfoodfacts.org/api/v0/produit/"+ barcode +".json";
+            HttpHandler sh2 = new HttpHandler();
+            String jsonStr2 = sh2.makeServiceCall(url2);
+             try {
+                 JSONObject mainJson = new JSONObject(jsonStr2);
+                 JSONObject product = mainJson.getJSONObject("product");
+                this.Compo = product.getString("ingredients_text_debug");
+                 System.out.println(this.Compo);
             } catch (JSONException e) {
                 e.printStackTrace();
-            } **/
+            }
         }
         else {
-            this.Nom="erreur dans le json je sais pas quoi";
+            System.out.println("erreur openfoodfacts");;
         }
 
     }

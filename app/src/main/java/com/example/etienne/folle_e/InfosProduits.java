@@ -29,6 +29,7 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
         TextView DisplayNom = (TextView) findViewById(R.id.nom_article);
         TextView DisplayPoids = (TextView) findViewById(R.id.poids_article);
         TextView DisplayPrix = (TextView) findViewById(R.id.prix_article);
+        TextView DisplayCompo = (TextView) findViewById(R.id.composition);
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
         Button Delete = (Button) findViewById(R.id.delete);
 
@@ -38,11 +39,13 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
         String prix = Float.toString(MainActivity.listeprod.get(position).Prix);
         final String poids = MainActivity.listeprod.get(position).Poids;
         String URLImage = MainActivity.listeprod.get(position).Photo;
+        String compo = MainActivity.listeprod.get(position).Compo;
 
         avatar.setImageDrawable(getImage(URLImage));
         DisplayNom.setText(nom);
         DisplayPrix.setText(prix + " €");
         DisplayPoids.setText(poids + "g");
+        DisplayCompo.setText("Composition : "+ compo);
 
 
         Delete.setOnClickListener(new View.OnClickListener() {

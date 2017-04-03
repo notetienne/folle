@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.etienne.folle_e.MainActivity">
 
-    
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -67,6 +67,8 @@
 
     </RelativeLayout>
 
+
+
     <Button android:id="@+id/scan_button"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -83,7 +85,12 @@
         android:layout_below="@+id/rl_info">
     </ListView>
 
-
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.etienne.folle_e.InsertCaddieFrag"
+        android:id="@+id/icf"
+        android:layout_below="@id/rl_info"/>
 
 
 

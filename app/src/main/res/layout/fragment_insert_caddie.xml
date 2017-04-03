@@ -1,13 +1,49 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.etienne.folle_e.InsertCaddieFrag">
+    tools:context="com.example.etienne.folle_e.InsertCaddieFrag"
+    android:background="#9e00bbff"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/av"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:background="#AAA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="105dp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/nom_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/av"
+        android:layout_alignTop="@+id/av"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        tools:text="Nom article" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/prix_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/nom_art"
+        android:layout_below="@+id/nom_art"
+        android:textSize="20dp"
+        tools:text="Prix" />
+
+    <TextView
+        android:id="@+id/poids_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/prix_art"
+        android:layout_below="@+id/prix_art"
+        android:text="Poids" />
+
+</RelativeLayout>

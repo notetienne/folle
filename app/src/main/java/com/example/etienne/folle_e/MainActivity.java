@@ -35,7 +35,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener, InsertCaddieFrag.OnFragmentInteractionListener {
 
     //****************** variables Bluetooth *******************
     // Tag for logging
@@ -175,6 +175,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onFragmentInteraction(Uri uri) {
         return;
+    }
+
+    @Override
+    public void onAnnul(Uri uri) {
+
     }
 
     //******************************* Bluetooth *******************************

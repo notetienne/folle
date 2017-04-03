@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.example.etienne.folle_e.MainActivity">
 
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_info">
+
     <fragment
         android:name="com.example.etienne.folle_e.InfosFrag"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:id="@+id/info_frag"/>
+
+
 
     <TextView
         android:text=""
@@ -23,6 +32,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/etat_co" />
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,9 +43,29 @@
         android:textSize="26dp"
         android:id="@+id/display_nb"
         android:layout_below="@+id/etat_co"
-        android:layout_toStartOf="@+id/scan_button"
-        android:layout_marginEnd="16dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
 
+    <Button
+        android:text=""
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:background="@drawable/payement"
+        android:id="@+id/caisse"
+        android:layout_alignTop="@+id/display_nb"
+        android:layout_alignEnd="@+id/etat_co" />
+
+
+    <TextView
+        android:id="@+id/display_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Total : 0 €"
+        android:layout_alignBottom="@+id/caisse"
+        android:layout_alignStart="@+id/display_nb" />
+
+    </RelativeLayout>
 
     <Button android:id="@+id/scan_button"
         android:layout_width="100dp"
@@ -49,26 +80,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/liste"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/info_frag">
+        android:layout_below="@+id/rl_info">
     </ListView>
 
-    <Button
-        android:text=""
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:background="@drawable/payement"
-        android:id="@+id/caisse"
-        android:layout_alignTop="@+id/display_nb"
-        android:layout_alignEnd="@+id/etat_co" />
 
-    <TextView
-        android:id="@+id/display_prix"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:text="Total : 0 €"
-        android:layout_alignBottom="@+id/caisse"
-        android:layout_alignStart="@+id/display_nb" />
+
 
 
 </RelativeLayout>

@@ -19,7 +19,7 @@ import java.io.InputStream;
 import java.io.Serializable;
 import java.net.URL;
 
-public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener,Serializable {
+public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener,Serializable, InsertCaddieFrag.OnFragmentInteractionListener {
 
     Dialog dialog;
 
@@ -107,4 +107,8 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
         return;
     }
 
+    @Override
+    public void onAnnul(Uri uri) {
+
+    }
 }

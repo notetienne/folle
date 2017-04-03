@@ -1,5 +1,6 @@
 package com.example.etienne.folle_e;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,9 +10,12 @@ import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +26,12 @@ import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONException;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    //private final String address = "30:14:10:09:16:49";//arduino
-    private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    private final String address = "30:14:10:09:16:49";//arduino
+    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;
@@ -50,6 +60,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView DisplayPrix;
     TextView DisplayNb;
     float sum = 0;
+    String FileName = "myfile";
+
+    static int PoidsCaddie = 0;
+    static boolean Connexion = false;
+    static Produit produitencours;
+    RelativeLayout RlInfoFrag;
 
     //****************** variables Scan ****************
     private GoogleApiClient client;
@@ -63,20 +79,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         System.out.println("ok");
+
+        setContentView(R.layout.activity_main);
+        RlInfoFrag = (RelativeLayout) findViewById(R.id.rl_info);
+        final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rl_info_anim);
+        RlInfoFrag.startAnimation(an);
         //Scan
         listeprod = new ArrayList<Produit>();
+        //On récupère la liste de produits stockés si elle existe
+
+        //RecupListe();
+
         mListView = (ListView) findViewById(R.id.liste);
         EtatCo = (TextView) findViewById(R.id.etat_co);
 
         //mListView = liste du XML. listeprod = liste des produits mise à jour à chaque scan. On affiche donc "listeprod" via mListView
         adapter = new ArticleAdapter(MainActivity.this, listeprod);
-        mListView.setAdapter(adapter);
+        //mListView.setAdapter(adapter);
         DisplayPrix = (TextView)findViewById(R.id.display_prix);
         DisplayNb = (TextView)findViewById(R.id.display_nb);
         //On met à jour l'affichage du nombre d'article
-        DisplayNb.setText(listeprod.size() + " articles");
+        //DisplayNb.setText(listeprod.size() + " articles");
         //Listener pour clique sur article
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -89,14 +113,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-
         //Lancer le Bluetooth
-        connectButtonPressed();
+        if(! Connexion)  connectButtonPressed();
 
         //Créé un listener pour le bouton scan
         scanBtn = (Button) findViewById(R.id.scan_button);
         scanBtn.setOnClickListener(this);
-
+        if(! Connexion){
+            scanBtn.setVisibility(View.GONE);
+        }else EtatCo.setText("Connecté");
         //bouton pour le payement
         caisse = (Button) findViewById(R.id.caisse);
         caisse.setOnClickListener(new View.OnClickListener() {
@@ -130,6 +155,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (btt != null) {
             writeButtonPressed("quit");
         }
+        //On stock la liste des produits sur le téléphone
+        try {
+            FileOutputStream fos = openFileOutput(FileName, Context.MODE_PRIVATE);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(listeprod);
+            fos.close();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         super.onDestroy();
     }
 
@@ -158,17 +196,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void handleMessage(Message message) {
 
+
                 String s = (String) message.obj;
 
                 // Do something with the message
                 if (s.equals("CONNECTED")) {
+                    Connexion = true;
                     EtatCo.setText("Connecté");
+                    Animation an2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.scan_btn_anim);
+                    scanBtn.startAnimation(an2);
+                    scanBtn.setVisibility(View.VISIBLE);
+
                 } else if (s.equals("DISCONNECTED")) {
                     EtatCo.setText("Déconnecté");
                 } else if (s.equals("CONNECTION FAILED")) {
-                    EtatCo.setText("Erreur de connexion !");
-
+                    connectButtonPressed();
+                    if(! Connexion) EtatCo.setText("Erreur de connexion !");
                     btt = null;
+                } else {
+                    //PoidsCaddie = Integer.parseInt(s);
+                    try{
+                        PoidsCaddie = Integer.parseInt(s.trim());
+                    }catch (NumberFormatException e){
+                        System.out.println("ERREUR DANS LA CONVERTION DU POIDS");
+                    }
                 }
             }
         });
@@ -180,7 +231,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btt.start();
 
 
-        EtatCo.setText("Connexion au caddie...");
+        if(! Connexion) EtatCo.setText("Connexion au caddie...");
     }
 
 
@@ -220,7 +271,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanningResult != null) {
             int i = listeprod.size();
-            Produit produitencours = new Produit();
+            produitencours = new Produit();
             String scanContent = scanningResult.getContents();
             try {
                 produitencours.nomme(scanContent);
@@ -230,21 +281,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             //Si le produit existe dans la bdd, l'ajouter, sinon afficher un message d'erreur
             if(produitencours.Nom != null){
+                writeButtonPressed("5");
+                //if(PoidsCaddie < 100) while (!(PoidsCaddie >= 100));
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Poids : " + PoidsCaddie, Toast.LENGTH_LONG);
+                toast.show();
                 listeprod.add(produitencours);
                 //Affichage de la liste
                 mListView.setAdapter(adapter);
                 //mise à jour affichage du nombre d'articles et total
                 DisplayNb.setText(listeprod.size() + " articles");
                 CalculSomme();
-            }else{
+            }/*else{
                 Toast toast = Toast.makeText(getApplicationContext(),
                         "Produit introuvable", Toast.LENGTH_SHORT);
                 toast.show();
-            }
-            //Si on est connecté au caddie, lui envoyer le poids
-            if (btt != null) {
-                writeButtonPressed(listeprod.get(i).Poids);
-            }
+            }*/
+
         }
 
         else{
@@ -271,6 +324,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         intent.putExtra("pos", position);
         startActivity(intent);
         overridePendingTransition(R.anim.transition_d, R.anim.transition_g);
+    }
+
+
+    public void RecupListe() {
+        /*Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+
+                try {
+                    FileInputStream fis = openFileInput(FileName);
+                    ObjectInputStream ois = new ObjectInputStream(fis);
+                    listeprod = (ArrayList<Produit>) ois.readObject();
+
+                    fis.close() ;
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                mListView.setAdapter(adapter);
+                DisplayNb.setText(listeprod.size() + " articles");
+                CalculSomme();;
+            }
+        };
+        new Thread(runnable).start();*/
+        try {
+            FileInputStream fis = openFileInput(FileName);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            listeprod = (ArrayList<Produit>) ois.readObject();
+
+            fis.close() ;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

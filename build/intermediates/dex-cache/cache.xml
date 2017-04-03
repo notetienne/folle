@@ -3,21 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/quentinmuret/.android/build-cache/cf33ffc2cb23a3cb836ea08ad49fe720266020dd/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="20debf58621cbc0dbed46e9fdd69a30d9eaf908b">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a5173813fc5946569e37d30efb8342391ff3cddd/classes.dex" />
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d24ead1ad8254ecff6dc5a8d5ada23aaf8a622b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Etienne/follegit/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/quentinmuret/.android/build-cache/c6bc42925ba6d4cc0f6daf8085367e8134d9a83f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f51ae3bd36eaa9284ffe4e6327839cafca578fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/67795e72cf13764f4e6b25dde915e556428e4253/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_29f92064da40f7b19e81db05e8fa6cf12cc5010c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/3dec62f4f6a5dcc9b72db4531b647d580d2d6681/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5cb8b71a679203a94c6a86e133acad885c0b7118/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/c78163be37a891ef63b7a99988b7f58e10b20b38/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac1b946fe336b77f906778c70cf34e30d1580a90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/c6bc42925ba6d4cc0f6daf8085367e8134d9a83f/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_3b52300ded16abebbf0be34f568f2d3cfe5a6d43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/bafe81aa10c3417be99c7d4d1710e19ef1de1e97/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_539c588f8526529628f859003110550c9e666beb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/bdb0ae241a3c4198a51da77613d494d0202b1aac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dcf0d1ffe2f61ae5060e4640e34251383808b7f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/62ee1a7e2443e04f0a716073caf418b03100a3a4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3dd498565019c4ccc0df5d5a3e18d8a9e66ed1bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/Etienne/follegit/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_191b67c6e7e4d2a2768588c959bb9b563b5acbf0/classes.dex" />
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_424a551f12c6e9736993c929338e45fc12784ee4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/2ceb460cc0aabc79c0bba3b21fe378c48ac0fd3b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e16577258d12cc055f0d8c365c4623086fa812a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5225ee2874cee9496a282e3184efaabc5a6308b1">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_837719110fcb75f9776cbdead41f641f68131f4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/3f5499d693de5318d10c92ad6eb27a309ba27d8e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69910fc6a85ca8899897becb33a0b5b0b5878011/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/e8260ef639e83c851eb545f23d095d4393aa8b7d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3f126ebe646a3b34b515bc297449f4bcbe9b0aeb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/7161127a82ebe93884a139e6871426523479b00c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a6275b3fb081ac6cacbde19482faa085be5039d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/761e946dc5e350ff8e4a5b657060adf0ecec9a3c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_551157656beb8e8d07f75c228fa145c122eaab18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/quentinmuret/.android/build-cache/5df3b0d2065dd8c1ed9385c27f04111e8bfe9675/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/Users/quentinmuret/Documents/AndroidStudio/gitfolle/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ae2d24183a5fad02bb5be4a3727122f678d354fc/classes.dex" />
     </item>
 
 </items>

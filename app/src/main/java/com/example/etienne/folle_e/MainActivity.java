@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TAG = "BluetoothActivity";
 
     // MAC address of remote Bluetooth device
-    private final String address = "30:14:10:09:16:49";//arduino
-    //private final String address = "B8:27:EB:1C:05:44";//rasp pi
+    //private final String address = "30:14:10:09:16:49";//arduino
+    private final String address = "B8:27:EB:1C:05:44";//rasp pi
 
     // The thread that does all the work
     BluetoothThread btt;
@@ -307,12 +307,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 e.printStackTrace();
             }
             //Si le produit existe dans la bdd, l'ajouter, sinon afficher un message d'erreur
-            View v = new View(this);
             System.out.println("---------------------  Poids reçu avant thread : "+ PoidsCaddie+" -----------------------");
             if(produitencours.Nom != null){
+
+                weightExpLock.lock();
+                try
+                {
+                    writeButtonPressed(Float.toString(CalculPoidsTheorique()));
+                    //writeButtonPressed("5");
+                }
+                finally {
+                    weightExpLock.unlock();
+                }
+
                 //On affiche le fragement d'infos du produits scanné
                 ICFFrag.setVisibility(View.VISIBLE);
-                WaitArticle(v);
+                LancerThreadRetourPoids();
+
             }
 
         }
@@ -324,6 +335,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void LancerThreadRetourPoids(){
+        View v = new View(this);
+        WaitArticle(v);
+    }
+
     //Thread qui attends que le client pose l'article dans le caddie
     public void WaitArticle(View v) {
 
@@ -331,12 +347,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void run() {
                 System.out.println("PoidsTotalTheorique :" + CalculPoidsTheorique());
-                System.out.println();
                 // Lecture en boucle du poids reçu
                 System.out.println("************************if(PoidsCaddie < 100){");
-                if(PoidsCaddie < 100){
+                if(PoidsCaddie == 0){
                     System.out.println("************************while (PoidsCaddie < 100);");
-                    while (PoidsCaddie < 100){
+                    while (PoidsCaddie == 0){
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
@@ -345,19 +360,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         System.out.println("attente poids 150");
                     }
                 }
-                System.out.println("************************AjoutArt(produitencours);");
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        AjoutArt(produitencours);
-                    }
-                });
+                if(PoidsCaddie <= CalculPoidsTheorique()+20 && PoidsCaddie >= CalculPoidsTheorique()-20){
+                    System.out.println("************************AjoutArt(produitencours);");
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            AjoutArt(produitencours);
+                        }
+                    });
+                }else LancerThreadRetourPoids();
+
 
             }
         };
         new Thread(runnable).start();
     }
-
 
     public void AjoutArt(Produit produitencours){
         //writeButtonPressed("5");
@@ -370,53 +387,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         DisplayNb.setText(listeprod.size() + " articles");
         CalculSomme();
         ICFFrag.setVisibility(View.GONE);
-/*
-        try{
-            if (weightExpLock.tryLock())
-            {
-                try{
-                    //System.out.println("PoidsCaddie : "+ PoidsCaddie);
-                    while(PoidsCaddie < 100);
-                    if(PoidsCaddie > 100){
-                        listeprod.add(produitencours);
-                        //Affichage de la liste
-                        mListView.setAdapter(adapter);
-                        //mise à jour affichage du nombre d'articles et total
-                        DisplayNb.setText(listeprod.size() + " articles");
-                        CalculSomme();
-                    }                }
-                finally {
-                    weightExpLock.unlock();
-                }
-            }
-
-        }catch (NumberFormatException e){
-            System.out.println("ERREUR DANS LA CONVERTION DU POIDS");
-        }
-
-*/
-
-
-
-
-
-        //if(PoidsCaddie < 100) while (!(PoidsCaddie >= 100));
-        /*for(int i= 0; i< 1000000000; i++){
-            System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$ : " + i);
-            if(PoidsCaddie > 100){
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Produit > 100 kg" + PoidsCaddie, Toast.LENGTH_LONG);
-                toast.show();
-                listeprod.add(produitencours);
-                //Affichage de la liste
-                mListView.setAdapter(adapter);
-                //mise à jour affichage du nombre d'articles et total
-                DisplayNb.setText(listeprod.size() + " articles");
-                CalculSomme();
-                return;
-            }
-        }*/
-
+        PoidsCaddie = 0;
     }
 
    public void CalculSomme(){
@@ -440,30 +411,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     public void RecupListe() {
-        /*Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
 
-                try {
-                    FileInputStream fis = openFileInput(FileName);
-                    ObjectInputStream ois = new ObjectInputStream(fis);
-                    listeprod = (ArrayList<Produit>) ois.readObject();
-
-                    fis.close() ;
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                mListView.setAdapter(adapter);
-                DisplayNb.setText(listeprod.size() + " articles");
-                CalculSomme();;
-            }
-        };
-        new Thread(runnable).start();*/
         try {
             FileInputStream fis = openFileInput(FileName);
             ObjectInputStream ois = new ObjectInputStream(fis);
@@ -477,16 +425,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        /* //faire ca pour bloquer l'acces a une variable (mutex)
-        weightExpLock.lock();
-        try
-        {
-         //SOME STUFF
-        }
-        finally {
-            weightExpLock.unlock();
-        }*/
 
     }
 
@@ -506,3 +444,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 
 
+/* //faire ca pour bloquer l'acces a une variable (mutex)
+        weightExpLock.lock();
+        try
+        {
+         //SOME STUFF
+        }
+        finally {
+            weightExpLock.unlock();
+        }*/

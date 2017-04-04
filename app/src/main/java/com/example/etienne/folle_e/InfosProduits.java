@@ -66,7 +66,7 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
             }
         });
         View v = new View(this);
-        WaitArticle(v);
+        //WaitArticle(v);
     }
 
     //Thread qui attends que le client pose l'article dans le caddie

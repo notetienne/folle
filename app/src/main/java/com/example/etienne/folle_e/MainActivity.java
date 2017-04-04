@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         caisse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                writeButtonPressed("end");
+                writeButtonPressed("led");
                 Intent intent = new Intent(getApplicationContext(),Caisse.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 intent.putExtra("Total", String.valueOf(sumPrix));
@@ -346,21 +346,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                System.out.println("PoidsTotalTheorique :" + CalculPoidsTheorique());
                 // Lecture en boucle du poids reçu
-                System.out.println("************************if(PoidsCaddie < 100){");
                 if(PoidsCaddie == 0){
-                    System.out.println("************************while (PoidsCaddie < 100);");
                     while (PoidsCaddie == 0){
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        System.out.println("attente poids 150");
+                        System.out.println("***************** attente poids ***************** : " + CalculPoidsTheorique());
+                        System.out.println(" ***************** Poids Reçu ***************** : " + PoidsCaddie);
                     }
                 }
-                if(PoidsCaddie <= CalculPoidsTheorique()+20 && PoidsCaddie >= CalculPoidsTheorique()-20){
+                if(PoidsCaddie <= CalculPoidsTheorique()+200 && PoidsCaddie >= CalculPoidsTheorique()-200){
                     System.out.println("************************AjoutArt(produitencours);");
                     handler.post(new Runnable() {
                         @Override
@@ -368,7 +366,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             AjoutArt(produitencours);
                         }
                     });
-                }else LancerThreadRetourPoids();
+                }else{
+                    writeButtonPressed(Float.toString(CalculPoidsTheorique()));
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    LancerThreadRetourPoids();
+                }
 
 
             }

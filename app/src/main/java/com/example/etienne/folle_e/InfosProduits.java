@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.Spanned;
@@ -22,15 +23,19 @@ import java.net.URL;
 public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFragmentInteractionListener,Serializable, InsertCaddieFrag.OnFragmentInteractionListener {
 
     Dialog dialog;
+    private Handler handler;
+    private TextView DisplayPrix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infos_produits);
 
+        handler = new Handler();
+
         TextView DisplayNom = (TextView) findViewById(R.id.nom_article);
         TextView DisplayPoids = (TextView) findViewById(R.id.poids_article);
-        TextView DisplayPrix = (TextView) findViewById(R.id.prix_article);
+        DisplayPrix = (TextView) findViewById(R.id.prix_article);
         TextView DisplayCompo = (TextView) findViewById(R.id.composition);
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
         Button Delete = (Button) findViewById(R.id.delete);
@@ -60,8 +65,63 @@ public class InfosProduits extends AppCompatActivity implements InfosFrag.OnFrag
                 finish();
             }
         });
+        View v = new View(this);
+        WaitArticle(v);
+    }
 
+    //Thread qui attends que le client pose l'article dans le caddie
+    public void WaitArticle(View v) {
 
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        while (true){
+                            try {
+                                Thread.sleep(500);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }                            DisplayPrix.setText("PoidsCaddie : " + com.example.etienne.folle_e.MainActivity.PoidsCaddie);
+                            System.out.println("PoidsCaddie : " + com.example.etienne.folle_e.MainActivity.PoidsCaddie);
+                        }
+
+                    }
+                });
+
+/*
+                // Lecture en boucle du poids reçu
+                System.out.println("************************if(PoidsCaddie < 100){");
+                if(PoidsCaddie < 100){
+                    System.out.println("************************while (PoidsCaddie < 100);");
+                    while (PoidsCaddie < 100){
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("attente poids 150");
+                    }
+                }
+                System.out.println("************************AjoutArt(produitencours);");
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        AjoutArt(produitencours);
+                    }
+                });
+*/
+            }
+        };
+        new Thread(runnable).start();
     }
 
     public Drawable getImage(String url){

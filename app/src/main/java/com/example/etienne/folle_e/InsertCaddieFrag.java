@@ -96,10 +96,10 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_insert_caddie, container, false);
 
-        DisplayNom = (TextView) findViewById(R.id.nom_art);
+        /*DisplayNom = (TextView) findViewById(R.id.nom_art);
         TextView DisplayPoids = (TextView) findViewById(R.id.poids_art);
         TextView DisplayPrix = (TextView) findViewById(R.id.prix_art);
-        ImageView avatar = (ImageView) findViewById(R.id.avatar);
+        ImageView avatar = (ImageView) findViewById(R.id.avatar);*/
         }
 
 // TODO: Rename method, update argument and hook method into UI event

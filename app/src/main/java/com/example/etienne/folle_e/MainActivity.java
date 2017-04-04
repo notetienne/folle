@@ -34,6 +34,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, InfosFrag.OnFragmentInteractionListener, InsertCaddieFrag.OnFragmentInteractionListener {
 
@@ -52,20 +53,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public Handler writeHandler;
     TextView EtatCo;
 
+    //Init mutex
+    public ReentrantLock weightExpLock = new ReentrantLock();
+
     //****************** variables liste *******************
 
-    ListView mListView;
-    ArticleAdapter adapter;
+    private ListView mListView;
+    private ArticleAdapter adapter;
     public static List<Produit> listeprod;
     TextView DisplayPrix;
     TextView DisplayNb;
-    float sum = 0;
+    float sumPrix = 0;
     String FileName = "myfile";
 
     static int PoidsCaddie = 0;
     static boolean Connexion = false;
     static Produit produitencours;
     RelativeLayout RlInfoFrag;
+    private Handler handler;
+    private RelativeLayout ICFFrag;
 
     //****************** variables Scan ****************
     private GoogleApiClient client;
@@ -80,11 +86,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         System.out.println("ok");
-
         setContentView(R.layout.activity_main);
         RlInfoFrag = (RelativeLayout) findViewById(R.id.rl_info);
         final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rl_info_anim);
-        RlInfoFrag.startAnimation(an);
+        if(!Connexion) RlInfoFrag.startAnimation(an);
+        //Handler pour WaitArticle
+        handler = new Handler();
+
+
+        ICFFrag = (RelativeLayout) findViewById(R.id.rl_icf);
+        ICFFrag.setVisibility(View.GONE);
+
         //Scan
         listeprod = new ArrayList<Produit>();
         //On récupère la liste de produits stockés si elle existe
@@ -130,7 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 writeButtonPressed("end");
                 Intent intent = new Intent(getApplicationContext(),Caisse.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                intent.putExtra("Total", String.valueOf(sum));
+                intent.putExtra("Total", String.valueOf(sumPrix));
                 startActivity(intent);
             }
         });
@@ -139,6 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
+
 
     }
 
@@ -221,7 +234,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     //PoidsCaddie = Integer.parseInt(s);
                     try{
-                        PoidsCaddie = Integer.parseInt(s.trim());
+                        if (weightExpLock.tryLock())
+                        {
+                            try{
+                                PoidsCaddie = Integer.parseInt(s.trim());
+                            }
+                            finally {
+                                weightExpLock.unlock();
+                            }
+                        }
+
                     }catch (NumberFormatException e){
                         System.out.println("ERREUR DANS LA CONVERTION DU POIDS");
                     }
@@ -285,23 +307,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 e.printStackTrace();
             }
             //Si le produit existe dans la bdd, l'ajouter, sinon afficher un message d'erreur
+            View v = new View(this);
+            System.out.println("---------------------  Poids reçu avant thread : "+ PoidsCaddie+" -----------------------");
             if(produitencours.Nom != null){
-                writeButtonPressed("5");
-                //if(PoidsCaddie < 100) while (!(PoidsCaddie >= 100));
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Poids : " + PoidsCaddie, Toast.LENGTH_LONG);
-                toast.show();
-                listeprod.add(produitencours);
-                //Affichage de la liste
-                mListView.setAdapter(adapter);
-                //mise à jour affichage du nombre d'articles et total
-                DisplayNb.setText(listeprod.size() + " articles");
-                CalculSomme();
-            }/*else{
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Produit introuvable", Toast.LENGTH_SHORT);
-                toast.show();
-            }*/
+                //On affiche le fragement d'infos du produits scanné
+                ICFFrag.setVisibility(View.VISIBLE);
+                WaitArticle(v);
+            }
 
         }
 
@@ -312,15 +324,110 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //Thread qui attends que le client pose l'article dans le caddie
+    public void WaitArticle(View v) {
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("PoidsTotalTheorique :" + CalculPoidsTheorique());
+                System.out.println();
+                // Lecture en boucle du poids reçu
+                System.out.println("************************if(PoidsCaddie < 100){");
+                if(PoidsCaddie < 100){
+                    System.out.println("************************while (PoidsCaddie < 100);");
+                    while (PoidsCaddie < 100){
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        System.out.println("attente poids 150");
+                    }
+                }
+                System.out.println("************************AjoutArt(produitencours);");
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        AjoutArt(produitencours);
+                    }
+                });
+
+            }
+        };
+        new Thread(runnable).start();
+    }
+
+
+    public void AjoutArt(Produit produitencours){
+        //writeButtonPressed("5");
+        System.out.println("---------------------  Poids reçu : "+ PoidsCaddie+" -----------------------");
+
+        listeprod.add(produitencours);
+        //Affichage de la liste
+        mListView.setAdapter(adapter);
+        //mise à jour affichage du nombre d'articles et total
+        DisplayNb.setText(listeprod.size() + " articles");
+        CalculSomme();
+        ICFFrag.setVisibility(View.GONE);
+/*
+        try{
+            if (weightExpLock.tryLock())
+            {
+                try{
+                    //System.out.println("PoidsCaddie : "+ PoidsCaddie);
+                    while(PoidsCaddie < 100);
+                    if(PoidsCaddie > 100){
+                        listeprod.add(produitencours);
+                        //Affichage de la liste
+                        mListView.setAdapter(adapter);
+                        //mise à jour affichage du nombre d'articles et total
+                        DisplayNb.setText(listeprod.size() + " articles");
+                        CalculSomme();
+                    }                }
+                finally {
+                    weightExpLock.unlock();
+                }
+            }
+
+        }catch (NumberFormatException e){
+            System.out.println("ERREUR DANS LA CONVERTION DU POIDS");
+        }
+
+*/
+
+
+
+
+
+        //if(PoidsCaddie < 100) while (!(PoidsCaddie >= 100));
+        /*for(int i= 0; i< 1000000000; i++){
+            System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$ : " + i);
+            if(PoidsCaddie > 100){
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Produit > 100 kg" + PoidsCaddie, Toast.LENGTH_LONG);
+                toast.show();
+                listeprod.add(produitencours);
+                //Affichage de la liste
+                mListView.setAdapter(adapter);
+                //mise à jour affichage du nombre d'articles et total
+                DisplayNb.setText(listeprod.size() + " articles");
+                CalculSomme();
+                return;
+            }
+        }*/
+
+    }
+
    public void CalculSomme(){
        int i = 0;
-       sum = 0;
+       sumPrix = 0;
        System.out.println("début calcul somme");
        for (i = 0; i< listeprod.size(); i++){
-           sum += listeprod.get(i).Prix;
+           sumPrix += listeprod.get(i).Prix;
            System.out.println(listeprod.get(i).Prix);
        }
-       DisplayPrix.setText("Total : " + sum + "€");
+       DisplayPrix.setText("Total : " + sumPrix + "€");
     }
 
     public void onClickNom(int position) {
@@ -370,7 +477,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        /* //faire ca pour bloquer l'acces a une variable (mutex)
+        weightExpLock.lock();
+        try
+        {
+         //SOME STUFF
+        }
+        finally {
+            weightExpLock.unlock();
+        }*/
+
+    }
+
+    public float CalculPoidsTheorique(){
+        float PoidsTotalTheorique = 0;
+        PoidsTotalTheorique = Float.parseFloat(produitencours.Poids);
+        for (int i = 0; i< listeprod.size(); i++){
+            PoidsTotalTheorique += Float.parseFloat(listeprod.get(i).Poids);
+        }
+        System.out.println("PoidsTotalTheorique :" + PoidsTotalTheorique);
+        return PoidsTotalTheorique;
     }
 
 
+
+
 }
+
+

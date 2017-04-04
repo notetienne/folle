@@ -85,12 +85,20 @@
         android:layout_below="@+id/rl_info">
     </ListView>
 
-    <fragment
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.example.etienne.folle_e.InsertCaddieFrag"
-        android:id="@+id/icf"
-        android:layout_below="@id/rl_info"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_info"
+        android:id="@+id/rl_icf">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.etienne.folle_e.InsertCaddieFrag"
+            android:id="@+id/icf" />
+
+
+    </RelativeLayout>
 
 
 
